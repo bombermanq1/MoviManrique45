@@ -1,0 +1,217 @@
+{
+  "config": {
+    "release": "cierre_v1",
+    "boundary_sensitivity_m": 0.01,
+    "metric_crs": 9377,
+    "endpoint_tolerances_m": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "tiny_length_m": 1.0,
+    "proximity_distances_m": [
+      30,
+      50,
+      75,
+      100
+    ],
+    "grid_size_m": 100,
+    "priority_quantile": 0.9,
+    "web_min_count": 5
+  },
+  "source_hashes": {
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\raw\\.gitkeep": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\raw\\comunas_medellin.geojson": "d8a2b125fd2af0519bb59ba2f38e46533ad7a1989fb9742e964a3d3d981da177",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\raw\\malla_vial_medellin.geojson": "4eca4e18c78921d52ab3bd180df4ca288364683475c9bfebab09247df5a9dd31",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\raw\\siniestros_medellin.csv": "57961d8f4b1db8b07c229c10b21127cc8733abd546d7167f44f433540c8ca67d",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\processed\\.gitkeep": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\processed\\carrera45_manrique.geojson": "7937918497190fdcb58a33ba00256ce18d384fa1371fdb04774121e846815774",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\processed\\carrera45_manrique_preliminar.geojson": "c430268069ade42288ce1a2f2719ef43989eb826279785d3ce46401b81eb59b5",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\processed\\corredor_carrera45_50m.geojson": "920b10b0a0562981e9ae92c87313827ad314407af7265fb8b705f8a9206436df",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\processed\\siniestros_carrera45_50m.csv": "a6bd1fe5a87840bdf383d5d548957ae15a698f94e6f0aec4573bd1bdb868f341",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\processed\\siniestros_comuna3.csv": "62e63ca64ecb167482cc32c8c01701ceb1d5e9370fa33222dceac183ac12e934",
+    "C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45\\data\\processed\\siniestros_comuna3_limpios.csv": "9f006d869941771ff6fa561f0137d5c7d7d4267dbe04586506590839cea56ce4",
+    "C:\\Users\\matth\\Documents\\carrera45_revision.gpkg": "8d4d79eff612ad3b19384d65856933d10a9e28235a4bd3541e4f995ddaccd3f5"
+  },
+  "sources_unchanged": true,
+  "code_hashes": {
+    "__init__.py": "0f3652ec6c28938c378b63ed247049629a6da979baf309cf687249894a8d1f18",
+    "build_qgis.py": "b2552383d4c28a0fa50f060d215cec067f8b8c6b3ece3a2dec3fc09a1f2eaab5",
+    "closure_policy.py": "fbff16b4aab764564e2007ac6d6969fa060e448212f679bf4db69f1d6ef2d252",
+    "closure_report.py": "df75ee3adf8865e4986f4a3ba1c933911fe093fc35d5dc487437ecb4af1351a7",
+    "common.py": "278c4f9b2a711ca104be4ef40fd4639a9fb9b8fa82212f5261908d39651e764b",
+    "config.json": "4f1a194ce55700002d59dbf321023fd6e819741140f022f8874ae86ff91c26c5",
+    "exports.py": "bd05256bb332bd77d3570c6b9444cd771525c16c73af11c71e139af4312e26ad",
+    "final_report.py": "dda67e3d23b44610abe2896414b1f7255c3c35f05c9d1b0d27e870794cc68426",
+    "geometry.py": "05f8c7e0fed9f6ca2c6cda88fada384786bb511d4e2d71b5edb4b584c06a4782",
+    "ids_cierre_v1.json": "4567162690025861bc6b13d9c4ca8fa4c3dcc2d9ad07d5a83ab0ada44cb1430d",
+    "incidents.py": "b883fc0912d80e5ef3338ad2ece1f5ad347838613620b08508e3fb873a246e89",
+    "pipeline.py": "a3824ee854161f71cb7ddf9964ca58544a5643de967dced9dfac1b4fd121f3b0",
+    "probe.py": "4a520c065fc50efc240ab8cd401b3f6f82773e888d5f26ec2834cb6226dc758e",
+    "run_tests.py": "216d6fc8522ae747379f634c74dd0fbf1a83fdd0df5c41d63e51310012e85b6e",
+    "validate_database.py": "7253d98636d91472dc1483a5508257f24ceb60f340b3ad9f6fee2b13550d1f9c",
+    "validate_fragments.py": "97414a54e65f547d375b332c8cced967c2871662a367762ed94aa291e9eaafea",
+    "validate_outside.py": "9f9e22bffd29f660442cfa558b902aff1fbfbef9fab7fe76d2fe2f988e3bdcdc",
+    "validate_qgis.py": "e5c52c1dd60efb0f9c76c36d9e327e8bf2b52a7a13bde7be631c38a35991de3c"
+  },
+  "export_hashes": {
+    "powerbi\\geospatial\\categorias_analisis.csv": "9b880416249632d73056b358f3d4465c2a82be3aa147190e6bb55e91d1aa5662",
+    "powerbi\\geospatial\\fragmentos_revision.csv": "54a113bab18c098edab2218b94dd9d8139e479f0a435a1174430bfceefcd5392",
+    "powerbi\\geospatial\\hechos_siniestros.csv": "8669a986b371440993ccf21a99b3ecaffd881220e013e83ba6658916b0bf3c0b",
+    "powerbi\\geospatial\\resumen_anio.csv": "00f29aa0da3f55c88774da5622650434f3a170edd68a9a80c8a320c1e9275771",
+    "powerbi\\geospatial\\resumen_anio_categoria.csv": "24e673d4e2b17625b886f0bfcf5f50c14651c900f6ac249e5a987186fa7bcd4e",
+    "powerbi\\geospatial\\resumen_barrio.csv": "be6e3752a19033720f4ea9fdfd95f59e8f0e63a018f25f57522e22acf519a60b",
+    "powerbi\\geospatial\\resumen_categoria_analisis.csv": "2cece5ffeb8bb4a999e24d27d5e05517afdcdecae2dbc51ec3faefb006ceebdf",
+    "powerbi\\geospatial\\resumen_clase_siniestro.csv": "038dc837373f17774c7fc212e8c88545e5abfe718ff4f80e00fd35d8523706e8",
+    "powerbi\\geospatial\\resumen_dentro_corredor_50m.csv": "f13ca3e4603f56650109ba24634d1896a14c29916ea2277a3ab613012ac87468",
+    "powerbi\\geospatial\\resumen_gravedad_siniestro.csv": "c13d0ef4cd6d5eebcdb499edc4f5150e813e65c23f1a9c5bc96982de8053ded1",
+    "powerbi\\geospatial\\segmentos.csv": "167ff675b148a12f1934df84d4b213818e588b64749ea2f9251465e8e3a80e8b",
+    "powerbi\\geospatial\\zonas.csv": "92ca7f9517d4269784658f84306b9e0b4dc479a97be0e3538ac7cb023aa0a833",
+    "data\\processed\\geospatial\\web\\carrera45.geojson": "dcb9e5219cef9c929590c5b2ef2aedd29652c63e20586fac3743e21c050f40b1",
+    "data\\processed\\geospatial\\web\\concentraciones.geojson": "fcb9c4044818fd72da01ebe432590ffe74258bf1dd4ade4aadac2233457865c7",
+    "data\\processed\\geospatial\\web\\fragmentos_revision.geojson": "f21d20fc64ef2bdafe9526dccd09f4d304c79de6bb9df79e15a32b773b06b1ee",
+    "data\\processed\\geospatial\\web\\zonas_prioritarias.geojson": "2fec3cb4c0567c3fe1b4e26db83c81e1d711bd4b0bf854ba2d60743554a4a197"
+  },
+  "crs_check": {
+    "file": "data/raw/malla_vial_medellin.geojson",
+    "declared_crs": "EPSG:9377",
+    "bounds": [
+      -75.7176274545746,
+      6.165441495719866,
+      -75.47307943490904,
+      6.37346201260481
+    ],
+    "coherent_declared_crs": false,
+    "status": "discrepancia_conocida_preservada",
+    "action": "RAW intacto. No se usa la etiqueta para medir; se conserva el eje EPSG:9377 validado.",
+    "historical_interpretation": "EPSG:4326 en memoria documentado por crear_carrera45_manrique.py; no correccion persistente."
+  },
+  "logical_hashes": {
+    "roads/segmentos": "b85aa68e4c184142192bdda4716bb928c5b167b05b8b30f5690479143f67c6ba",
+    "roads/partes": "ba85ffa1f951e9e58a52a80bfd8749b70c897fea255b6eb135c132f3770445c2",
+    "roads/fragmentos": "d6f4d390b159813429045884c3a6939ca6f51d776cf1ff7f20732c5bb534405a",
+    "roads/extremos": "0149831826429e30e7e842320707a9b0043f33b2db2674e5d2964e7b33458255",
+    "roads/discontinuidades": "31b6b975cf0a182ed0f159114505bb97f7ed1ce0fe7b62f0b8221cd07e9726ec",
+    "incidents/siniestros": "7635af5a9961b99cf70a1e94209c4d478de33a32dcbb7bf1d7d2e215c1904bc2",
+    "incidents/concentraciones": "2f7d0f700e752ac280604fa4448b72a26ba08cb3c9e18e01669bd4ef4968bd21",
+    "incidents/zonas_prioritarias": "92b1b4e4ca316b6a3eaf77b082daece32f79d7e269fe54bdcb77ea74e17cde5f",
+    "incidents/corredor_50m": "c11d06a0ab465137b1495ff4098e481228c38562549d168aae3f13201d8fbd1f",
+    "incidents/manrique": "630d6658fdbc5256ba90b688b796326017754c058d55048536e447bca2b7bb4e",
+    "facts": "002a753ec40cfd1a84af9ad6ed2ee3396cdfbbfa9d39c95b5400aab0ebbc04f2"
+  },
+  "repeated_same_inputs": true,
+  "reproducible": true,
+  "roads": {
+    "segmentos": 26,
+    "partes": 33,
+    "fragmentos": 6,
+    "longitud_m": 1698.6745351784073,
+    "invalidas": 0,
+    "duplicadas": 0,
+    "candidatos_discontinuidad": 32
+  },
+  "incidents": {
+    "registros": 8332,
+    "coordenadas_invalidas": 0,
+    "fechas_invalidas": 0,
+    "anio_discrepante": 0,
+    "duplicados_fila": 0,
+    "radicados_repetidos": 0,
+    "coincidencias_fecha_coordenada": 65,
+    "categorias_nulas": {
+      "clase_siniestro": 0,
+      "gravedad_siniestro": 0,
+      "barrio": 0
+    },
+    "raw_total": 235820,
+    "ids_comuna_reproducidos": true,
+    "fuera_entorno_local": 0,
+    "fuera_limite_manrique": 44,
+    "corredor_50m": 604,
+    "corredor_previo": 604,
+    "ids_solo_actual": 0,
+    "ids_solo_previo": 0,
+    "fecha_min": "2019-01-01",
+    "fecha_max": "2025-12-31",
+    "celdas_ocupadas": 439,
+    "umbral_prioridad": 43.19999999999999,
+    "zonas_prioritarias": 12,
+    "categorias_cierre": {
+      "resto_manrique": 7684,
+      "principal_50m": 604,
+      "sensibilidad_borde": 40,
+      "revision_territorial": 4
+    },
+    "sensibilidad": [
+      {
+        "distancia_m": 30,
+        "proximidad": 593,
+        "proximidad_en_manrique": 553
+      },
+      {
+        "distancia_m": 50,
+        "proximidad": 644,
+        "proximidad_en_manrique": 604
+      },
+      {
+        "distancia_m": 75,
+        "proximidad": 871,
+        "proximidad_en_manrique": 831
+      },
+      {
+        "distancia_m": 100,
+        "proximidad": 982,
+        "proximidad_en_manrique": 942
+      }
+    ]
+  },
+  "exports": {
+    "powerbi_registros": 8332,
+    "web": {
+      "carrera45": {
+        "features": 26,
+        "bytes": 7527,
+        "crs": "EPSG:4326",
+        "columns": [
+          "objectid",
+          "longitud_m",
+          "geometry"
+        ]
+      },
+      "fragmentos_revision": {
+        "features": 6,
+        "bytes": 1805,
+        "crs": "EPSG:4326",
+        "columns": [
+          "parte_id",
+          "objectid",
+          "longitud_m",
+          "clasificacion",
+          "geometry"
+        ]
+      },
+      "concentraciones": {
+        "features": 342,
+        "bytes": 175511,
+        "crs": "EPSG:4326",
+        "columns": [
+          "zona_id",
+          "cantidad",
+          "prioritaria",
+          "geometry"
+        ]
+      },
+      "zonas_prioritarias": {
+        "features": 12,
+        "bytes": 5714,
+        "crs": "EPSG:4326",
+        "columns": [
+          "zona_id",
+          "cantidad",
+          "prioritaria",
+          "geometry"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "count": 44,
+  "coordinates_identical_raw": true,
+  "outside_also_epsg4326": 44,
+  "boundary_distance_m": {
+    "count": 44.0,
+    "mean": 1.4035583482618208,
+    "std": 5.126436018329573,
+    "min": 3.271484445405189e-06,
+    "25%": 0.00019915488887375184,
+    "50%": 0.00026387860517388653,
+    "75%": 0.00033265209556338697,
+    "max": 26.684031984600114
+  },
+  "boundary_tolerances": {
+    "0.01": 40,
+    "0.1": 40,
+    "1": 40,
+    "5": 41,
+    "10": 41,
+    "25": 43,
+    "50": 44
+  },
+  "near_road_50m": 40,
+  "actual_territories": {
+    "04:Aranjuez": 40,
+    "90:Corregimiento de Santa Elena": 3,
+    "01:Popular": 1
+  },
+  "nominal_neighborhoods": {
+    "Manrique Central No.2": 25,
+    "El Pomar": 5,
+    "La Salle": 5,
+    "Piedras Blancas - Matasano": 3,
+    "Las Granjas": 3,
+    "Campo Valdés No.1": 2,
+    "Villa Guadalupe": 1
+  },
+  "years": {
+    "2019.0": 1,
+    "2022.0": 3,
+    "2024.0": 2,
+    "2025.0": 38
+  },
+  "unique_coordinates": 10,
+  "largest_coordinate_group": 16,
+  "raw_hashes_unchanged": true,
+  "near_boundary_max_m": 0.0017910602170277542,
+  "remaining_four": [
+    {
+      "objectid": 125795,
+      "territorio_geometrico": "90:Corregimiento de Santa Elena",
+      "distancia_limite_m": 3.7305507366923587,
+      "distancia_carrera45_m": 1849.8989164772183
+    },
+    {
+      "objectid": 140908,
+      "territorio_geometrico": "90:Corregimiento de Santa Elena",
+      "distancia_limite_m": 15.664917075981348,
+      "distancia_carrera45_m": 1536.991508788385
+    },
+    {
+      "objectid": 154532,
+      "territorio_geometrico": "90:Corregimiento de Santa Elena",
+      "distancia_limite_m": 15.664917075981348,
+      "distancia_carrera45_m": 1536.991508788385
+    },
+    {
+      "objectid": 192142,
+      "territorio_geometrico": "01:Popular",
+      "distancia_limite_m": 26.684031984600114,
+      "distancia_carrera45_m": 250.79011219725498
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+test_bi_dimension_and_rollups (test_closure.ClosureTests.test_bi_dimension_and_rollups) ... ok
+test_border_never_expands_main_indicator (test_closure.ClosureTests.test_border_never_expands_main_indicator) ... ok
+test_crs_discrepancy_preserved (test_closure.ClosureTests.test_crs_discrepancy_preserved) ... ok
+test_exclusive_partition (test_closure.ClosureTests.test_exclusive_partition) ... ok
+test_frozen_identity_and_flags (test_closure.ClosureTests.test_frozen_identity_and_flags) ... ok
+test_identity_guard_rejects_same_count_replacement (test_closure.ClosureTests.test_identity_guard_rejects_same_count_replacement) ... ok
+test_repeat_includes_exports_and_code (test_closure.ClosureTests.test_repeat_includes_exports_and_code) ... ok
+test_six_fragments_kept (test_closure.ClosureTests.test_six_fragments_kept) ... ok
+test_26_geometries_identical (test_final_validation.FinalValidationTests.test_26_geometries_identical) ... ok
+test_boundary_investigation (test_final_validation.FinalValidationTests.test_boundary_investigation) ... ok
+test_connection_read_only (test_final_validation.FinalValidationTests.test_connection_read_only) ... ok
+test_existing_qgis (test_final_validation.FinalValidationTests.test_existing_qgis) ... ok
+test_incident_ids_and_attributes (test_final_validation.FinalValidationTests.test_incident_ids_and_attributes) ... ok
+test_native_postgis_corridor (test_final_validation.FinalValidationTests.test_native_postgis_corridor) ... ok
+test_six_parts_reproduced (test_final_validation.FinalValidationTests.test_six_parts_reproduced) ... ok
+test_crs_required (test_geospatial.GeometryTests.test_crs_required) ... ok
+test_duplicate_ids_block (test_geospatial.GeometryTests.test_duplicate_ids_block) ... ok
+test_grid_boundary_unique (test_geospatial.GeometryTests.test_grid_boundary_unique) ... ok
+test_invalid_coordinate_values (test_geospatial.GeometryTests.test_invalid_coordinate_values) ... ok
+test_metric_transform (test_geospatial.GeometryTests.test_metric_transform) ... ok
+test_no_source_write (test_geospatial.GeometryTests.test_no_source_write) ... ok
+test_tiny_connection_and_gap (test_geospatial.GeometryTests.test_tiny_connection_and_gap) ... ok
+test_all_layers_valid (test_geospatial.ProductTests.test_all_layers_valid) ... ok
+test_conservation_and_relations (test_geospatial.ProductTests.test_conservation_and_relations) ... ok
+test_corridor_matches_existing_ids (test_geospatial.ProductTests.test_corridor_matches_existing_ids) ... ok
+test_original_geometries (test_geospatial.ProductTests.test_original_geometries) ... ok
+test_reproducibility (test_geospatial.ProductTests.test_reproducibility) ... ok
+test_source_integrity (test_geospatial.ProductTests.test_source_integrity) ... ok
+test_tiny_fragments_regression (test_geospatial.ProductTests.test_tiny_fragments_regression) ... ok
+test_web_coordinates_and_privacy (test_geospatial.ProductTests.test_web_coordinates_and_privacy) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.954s
+
+OK

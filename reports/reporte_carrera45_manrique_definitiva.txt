@@ -1,0 +1,17 @@
+REPORTE — EJE DEFINITIVO CARRERA 45, COMUNA 3 - MANRIQUE
+Criterio territorial: se conserva exclusivamente la geometría ya recortada al polígono oficial de Comuna 3 - Manrique.
+Criterio de selección: segmentos CR 45 del eje preliminar; se excluye solo la ramificación transversal validada.
+Exclusión: objectid 13704; motivo: ramificación transversal, no continuación del eje longitudinal. No se excluyó por estar fuera de Manrique.
+Número final de segmentos: 26
+Longitud total: 1698.67 m
+CRS: EPSG:9377
+Objectids incluidos: [1697, 3030, 6990, 7218, 7611, 12783, 14539, 15098, 15185, 18359, 20368, 20909, 21844, 22099, 22535, 22622, 23780, 24122, 24568, 24778, 25862, 26016, 28471, 28752, 30616, 34909]
+Gaps conocidos: 64.04 m, 7.73 m, 99.03 m, 100.91 m, 11.33 m, 8.54 m, 2.59 m y 137.31 m.
+Los gaps se mantienen: no se rellenaron con líneas artificiales ni se extendió el eje fuera de Manrique.
+Geometrías nulas: 0
+Geometrías vacías: 0
+Geometrías inválidas: 0
+Geometrías fuera de Manrique: 0
+
+GeoJSON definitivo guardado en: C:\Users\matth\OneDrive\Escritorio\ITM\movimanrique45\data\processed\carrera45_manrique.geojson
+Mapa definitivo guardado en: C:\Users\matth\OneDrive\Escritorio\ITM\movimanrique45\reports\mapa_carrera45_manrique_definitiva.png

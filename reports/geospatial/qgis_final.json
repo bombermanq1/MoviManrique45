@@ -1,0 +1,100 @@
+{
+  "opened": true,
+  "layer_count": 10,
+  "layers": [
+    {
+      "name": "Carrera 45 - referencia sin cambios",
+      "valid": true,
+      "features": 26,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/carrera45_auditoria.gpkg|layername=referencia",
+      "source_exists": true,
+      "read_only": true
+    },
+    {
+      "name": "Carrera 45 - revision geometrica",
+      "valid": true,
+      "features": 26,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/carrera45_auditoria.gpkg|layername=segmentos",
+      "source_exists": true,
+      "read_only": true
+    },
+    {
+      "name": "Concentraciones - celdas de 100 m",
+      "valid": true,
+      "features": 439,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/siniestros_analisis.gpkg|layername=concentraciones",
+      "source_exists": true,
+      "read_only": true
+    },
+    {
+      "name": "Corredor de 50 m recortado",
+      "valid": true,
+      "features": 1,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/siniestros_analisis.gpkg|layername=corredor_50m",
+      "source_exists": true,
+      "read_only": true
+    },
+    {
+      "name": "Discontinuidades candidatas - revision manual",
+      "valid": true,
+      "features": 32,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/carrera45_auditoria.gpkg|layername=discontinuidades",
+      "source_exists": true,
+      "read_only": true
+    },
+    {
+      "name": "Extremos para inspeccion de conexiones",
+      "valid": true,
+      "features": 66,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/carrera45_auditoria.gpkg|layername=extremos",
+      "source_exists": true,
+      "read_only": true
+    },
+    {
+      "name": "Fragmentos menores de 1 m",
+      "valid": true,
+      "features": 6,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/carrera45_auditoria.gpkg|layername=fragmentos",
+      "source_exists": true,
+      "read_only": true
+    },
+    {
+      "name": "Limite oficial de Manrique",
+      "valid": true,
+      "features": 1,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/siniestros_analisis.gpkg|layername=manrique",
+      "source_exists": true,
+      "read_only": true
+    },
+    {
+      "name": "Prioridad exploratoria - conteos altos",
+      "valid": true,
+      "features": 12,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/siniestros_analisis.gpkg|layername=zonas_prioritarias",
+      "source_exists": true,
+      "read_only": true
+    },
+    {
+      "name": "Siniestros Comuna 3 - proximidad, no atribucion",
+      "valid": true,
+      "features": 8332,
+      "crs": "EPSG:9377",
+      "source": "C:/Users/matth/OneDrive/Escritorio/ITM/movimanrique45/data/processed/geospatial/siniestros_analisis.gpkg|layername=siniestros",
+      "source_exists": true,
+      "read_only": true
+    }
+  ],
+  "render_saved": true,
+  "render_errors": [],
+  "project_unchanged": true,
+  "passed": true
+}

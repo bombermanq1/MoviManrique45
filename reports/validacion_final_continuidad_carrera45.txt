@@ -1,0 +1,37 @@
+VALIDACIÓN FINAL DE CONTINUIDAD — CARRERA 45, MANRIQUE
+Segmentos analizados: 27
+CRS de análisis: EPSG:9377
+
+=== COMPONENTES CONECTADOS POR CONTACTO EXACTO ===
+Componente 1: objectid=[18359, 20368, 20909, 28752]; segmentos=4; longitud=257.81 m
+Componente 2: objectid=[3030, 7611, 22535]; segmentos=3; longitud=95.89 m
+Componente 3: objectid=[7218, 12783, 14539, 15098, 23780, 24568]; segmentos=6; longitud=355.40 m
+Componente 4: objectid=[22622, 25862]; segmentos=2; longitud=38.56 m
+Componente 5: objectid=[15185, 24778, 30616]; segmentos=3; longitud=173.77 m
+Componente 6: objectid=[26016]; segmentos=1; longitud=93.54 m
+Componente 7: objectid=[6990, 21844, 22099, 28471]; segmentos=4; longitud=370.29 m
+Componente 8: objectid=[1697, 34909]; segmentos=2; longitud=199.70 m
+Componente 9: objectid=[24122]; segmentos=1; longitud=113.70 m
+Componente 10: objectid=[13704]; segmentos=1; longitud=46.50 m
+
+Segmentos aislados por contacto exacto: [26016, 24122, 13704]
+
+=== GAPS ENTRE COMPONENTES LONGITUDINALES CONSECUTIVOS ===
+C1 [18359, 20368, 20909, 28752] -> C2 [3030, 7611, 22535]: gap mínimo entre extremos = 64.04 m
+C2 [3030, 7611, 22535] -> C3 [7218, 12783, 14539, 15098, 23780, 24568]: gap mínimo entre extremos = 7.73 m
+C3 [7218, 12783, 14539, 15098, 23780, 24568] -> C4 [22622, 25862]: gap mínimo entre extremos = 99.03 m
+C4 [22622, 25862] -> C5 [15185, 24778, 30616]: gap mínimo entre extremos = 100.91 m
+C5 [15185, 24778, 30616] -> C6 [26016]: gap mínimo entre extremos = 11.33 m
+C6 [26016] -> C7 [6990, 21844, 22099, 28471]: gap mínimo entre extremos = 8.54 m
+C7 [6990, 21844, 22099, 28471] -> C8 [1697, 34909]: gap mínimo entre extremos = 2.59 m
+C8 [1697, 34909] -> C9 [24122]: gap mínimo entre extremos = 137.31 m
+
+Segmentos con comportamiento transversal: [13704]
+Objectids del eje longitudinal principal: [1697, 3030, 6990, 7218, 7611, 12783, 14539, 15098, 15185, 18359, 20368, 20909, 21844, 22099, 22535, 22622, 23780, 24122, 24568, 24778, 25862, 26016, 28471, 28752, 30616, 34909]
+Longitud total del eje principal: 1698.67 m
+Segmentos excluidos/revisión: [13704]
+Decisión técnica sobre 13704: EXCLUIR del eje definitivo propuesto. Está dentro de Manrique, pero es el único tramo con orientación predominantemente este-oeste y funciona como ramificación transversal, no como continuación longitudinal.
+Otros segmentos que requieren revisión por comportamiento similar: []
+No se creó ningún GeoJSON definitivo en esta etapa.
+
+Mapa de validación guardado en: C:\Users\matth\OneDrive\Escritorio\ITM\movimanrique45\reports\mapa_validacion_final_carrera45.png

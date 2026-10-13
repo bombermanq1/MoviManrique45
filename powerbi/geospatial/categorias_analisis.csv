@@ -1,0 +1,6 @@
+﻿categoria_analisis,descripcion,incluye_indicador_principal,requiere_revision_territorial
+principal_50m,Indicador principal: corredor estricto de 50 m,True,False
+sensibilidad_borde,Sensibilidad al borde de Aranjuez; excluida del principal,False,False
+revision_territorial,Registro externo pendiente de revision territorial,False,True
+resto_manrique,"Dentro de Manrique, fuera del corredor principal",False,False
+sin_posicion_validada,Sin posicion apta para clasificacion espacial,False,True

@@ -1,0 +1,20 @@
+test_crs_required (test_geospatial.GeometryTests.test_crs_required) ... ok
+test_duplicate_ids_block (test_geospatial.GeometryTests.test_duplicate_ids_block) ... ok
+test_grid_boundary_unique (test_geospatial.GeometryTests.test_grid_boundary_unique) ... ok
+test_invalid_coordinate_values (test_geospatial.GeometryTests.test_invalid_coordinate_values) ... ok
+test_metric_transform (test_geospatial.GeometryTests.test_metric_transform) ... ok
+test_no_source_write (test_geospatial.GeometryTests.test_no_source_write) ... ok
+test_tiny_connection_and_gap (test_geospatial.GeometryTests.test_tiny_connection_and_gap) ... ok
+test_all_layers_valid (test_geospatial.ProductTests.test_all_layers_valid) ... ok
+test_conservation_and_relations (test_geospatial.ProductTests.test_conservation_and_relations) ... ok
+test_corridor_matches_existing_ids (test_geospatial.ProductTests.test_corridor_matches_existing_ids) ... ok
+test_original_geometries (test_geospatial.ProductTests.test_original_geometries) ... ok
+test_reproducibility (test_geospatial.ProductTests.test_reproducibility) ... ok
+test_source_integrity (test_geospatial.ProductTests.test_source_integrity) ... ok
+test_tiny_fragments_regression (test_geospatial.ProductTests.test_tiny_fragments_regression) ... ok
+test_web_coordinates_and_privacy (test_geospatial.ProductTests.test_web_coordinates_and_privacy) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.968s
+
+OK

@@ -1,0 +1,14 @@
+{
+  "file": "data/raw/malla_vial_medellin.geojson",
+  "declared_crs": "EPSG:9377",
+  "bounds": [
+    -75.7176274545746,
+    6.165441495719866,
+    -75.47307943490904,
+    6.37346201260481
+  ],
+  "coherent_declared_crs": false,
+  "status": "discrepancia_conocida_preservada",
+  "action": "RAW intacto. No se usa la etiqueta para medir; se conserva el eje EPSG:9377 validado.",
+  "historical_interpretation": "EPSG:4326 en memoria documentado por crear_carrera45_manrique.py; no correccion persistente."
+}

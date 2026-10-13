@@ -1,0 +1,11 @@
+{
+  "release": "cierre_v1",
+  "boundary_sensitivity_m": 0.01,
+  "metric_crs": 9377,
+  "endpoint_tolerances_m": [0.01, 0.1, 1.0],
+  "tiny_length_m": 1.0,
+  "proximity_distances_m": [30, 50, 75, 100],
+  "grid_size_m": 100,
+  "priority_quantile": 0.9,
+  "web_min_count": 5
+}

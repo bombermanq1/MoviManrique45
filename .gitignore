@@ -1,0 +1,77 @@
+# Entornos virtuales y caché de Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Datos locales
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Temporales, registros y herramientas Python
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Credenciales y configuracion privada
+.env
+.env.*
+!.env.example
+!.env.template
+.pgpass
+pgpass.conf
+.pg_service.conf
+.netrc
+_netrc
+credentials.json
+credentials.*.json
+client_secret*.json
+secrets.*
+secrets/
+.secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Bases de datos y copias locales (se conservan los scripts SQL)
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.dump
+*.backup
+*.sql.gz
+*.sql.zip
+pgdata/
+backups/
+
+# Datos privados y salidas sensibles
+data/private/
+data/sensitive/
+reports/private/
+reports/sensitive/
+
+reports/geospatial/environment.json
+
+powerbi/geospatial/hechos_siniestros.csv

@@ -1,0 +1,138 @@
+[
+  {
+    "archivo": "data/processed/geospatial/carrera45_auditoria.gpkg",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "data/processed/geospatial/siniestros_analisis.gpkg",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "powerbi/geospatial/categorias_analisis.csv",
+    "estado": "creado"
+  },
+  {
+    "archivo": "powerbi/geospatial/fragmentos_revision.csv",
+    "estado": "creado"
+  },
+  {
+    "archivo": "powerbi/geospatial/hechos_siniestros.csv",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "powerbi/geospatial/README.md",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "powerbi/geospatial/resumen_anio_categoria.csv",
+    "estado": "creado"
+  },
+  {
+    "archivo": "powerbi/geospatial/resumen_categoria_analisis.csv",
+    "estado": "creado"
+  },
+  {
+    "archivo": "reports/analisis_espacial_siniestros.md",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "reports/auditoria_geometrica_carrera45.md",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "reports/geospatial/cierre_archivos.json",
+    "estado": "creado"
+  },
+  {
+    "archivo": "reports/geospatial/cierre_archivos_antes.json",
+    "estado": "creado"
+  },
+  {
+    "archivo": "reports/geospatial/cierre_ejecucion_1.log",
+    "estado": "creado"
+  },
+  {
+    "archivo": "reports/geospatial/cierre_ejecucion_2.log",
+    "estado": "creado"
+  },
+  {
+    "archivo": "reports/geospatial/cierre_tecnico.md",
+    "estado": "creado"
+  },
+  {
+    "archivo": "reports/geospatial/crs_raw_cierre.json",
+    "estado": "creado"
+  },
+  {
+    "archivo": "reports/geospatial/diccionario_datos.md",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "reports/geospatial/final_tests.json",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "reports/geospatial/final_tests.txt",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "reports/geospatial/pipeline.log",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "reports/geospatial/resumen_implementacion.md",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "reports/geospatial/run.json",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "reports/geospatial/validacion_final.md",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "src/geospatial/closure_policy.py",
+    "estado": "creado"
+  },
+  {
+    "archivo": "src/geospatial/closure_report.py",
+    "estado": "creado"
+  },
+  {
+    "archivo": "src/geospatial/config.json",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "src/geospatial/exports.py",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "src/geospatial/final_report.py",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "src/geospatial/geometry.py",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "src/geospatial/ids_cierre_v1.json",
+    "estado": "creado"
+  },
+  {
+    "archivo": "src/geospatial/incidents.py",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "src/geospatial/pipeline.py",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "src/geospatial/README.md",
+    "estado": "actualizado"
+  },
+  {
+    "archivo": "tests/test_closure.py",
+    "estado": "creado"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "parte_id": "7611:1",
+    "objectid": 7611,
+    "longitud_m": 0.08772342684793151,
+    "extremo_inicio_a_vecino_m": 0.08772342684793151,
+    "extremo_final_a_vecino_m": 0.0,
+    "distancia_al_limite_m": 2.362534668343748e-10,
+    "coincide_parte_recorte_raw": true,
+    "hausdorff_recorte_entidad_m": 0.0,
+    "coincide_revision_entidad": true
+  },
+  {
+    "parte_id": "20909:1",
+    "objectid": 20909,
+    "longitud_m": 0.06902071051204553,
+    "extremo_inicio_a_vecino_m": 0.0,
+    "extremo_final_a_vecino_m": 0.06902071051204553,
+    "distancia_al_limite_m": 1.884351262890317e-10,
+    "coincide_parte_recorte_raw": true,
+    "hausdorff_recorte_entidad_m": 0.0,
+    "coincide_revision_entidad": true
+  },
+  {
+    "parte_id": "20909:2",
+    "objectid": 20909,
+    "longitud_m": 0.03575874442684792,
+    "extremo_inicio_a_vecino_m": 0.03575874442684792,
+    "extremo_final_a_vecino_m": 0.0,
+    "distancia_al_limite_m": 0.0,
+    "coincide_parte_recorte_raw": true,
+    "hausdorff_recorte_entidad_m": 0.0,
+    "coincide_revision_entidad": true
+  },
+  {
+    "parte_id": "24568:1",
+    "objectid": 24568,
+    "longitud_m": 0.21823772344495745,
+    "extremo_inicio_a_vecino_m": 0.0,
+    "extremo_final_a_vecino_m": 0.21823772344495745,
+    "distancia_al_limite_m": 3.0883477315417555e-10,
+    "coincide_parte_recorte_raw": true,
+    "hausdorff_recorte_entidad_m": 0.0,
+    "coincide_revision_entidad": true
+  },
+  {
+    "parte_id": "28471:1",
+    "objectid": 28471,
+    "longitud_m": 0.12704841332375694,
+    "extremo_inicio_a_vecino_m": 0.0,
+    "extremo_final_a_vecino_m": 0.12704841332375694,
+    "distancia_al_limite_m": 1.8465577694403947e-10,
+    "coincide_parte_recorte_raw": true,
+    "hausdorff_recorte_entidad_m": 0.0,
+    "coincide_revision_entidad": true
+  },
+  {
+    "parte_id": "28471:2",
+    "objectid": 28471,
+    "longitud_m": 0.032630835996648656,
+    "extremo_inicio_a_vecino_m": 0.032630835996648656,
+    "extremo_final_a_vecino_m": 0.0,
+    "distancia_al_limite_m": 2.4400251897808023e-10,
+    "coincide_parte_recorte_raw": true,
+    "hausdorff_recorte_entidad_m": 0.0,
+    "coincide_revision_entidad": true
+  }
+]

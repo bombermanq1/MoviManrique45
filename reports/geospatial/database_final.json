@@ -1,0 +1,738 @@
+{
+  "status": "validated_available_tables",
+  "tables": {
+    "carrera45_segmentos": {
+      "columns": [
+        [
+          "objectid",
+          "integer"
+        ],
+        [
+          "tipo_via",
+          "text"
+        ],
+        [
+          "numero_via",
+          "double precision"
+        ],
+        [
+          "label",
+          "text"
+        ],
+        [
+          "nombre_comun",
+          "text"
+        ],
+        [
+          "apendice_via",
+          "text"
+        ],
+        [
+          "orientacion_via",
+          "text"
+        ],
+        [
+          "longitud",
+          "double precision"
+        ],
+        [
+          "comuna_original_malla",
+          "text"
+        ],
+        [
+          "longitud_original",
+          "double precision"
+        ],
+        [
+          "longitud_geometrica_original_m",
+          "double precision"
+        ],
+        [
+          "longitud_dentro_manrique_m",
+          "double precision"
+        ],
+        [
+          "porcentaje_dentro_manrique",
+          "double precision"
+        ],
+        [
+          "territorio_proyecto",
+          "text"
+        ],
+        [
+          "requiere_revision_eje",
+          "boolean"
+        ],
+        [
+          "geometry",
+          "USER-DEFINED"
+        ]
+      ],
+      "rows": 26,
+      "geometries": [
+        [
+          "public",
+          "carrera45_segmentos",
+          "geometry",
+          9377,
+          "GEOMETRY"
+        ]
+      ],
+      "srids": [
+        9377
+      ],
+      "null_or_empty": 0,
+      "invalid_nonnull": 0,
+      "duplicate_ids": 0,
+      "ids_only_db": [],
+      "ids_only_local": [],
+      "comparison": [
+        {
+          "objectid": 1697,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 3030,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 6990,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 7218,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 7611,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 12783,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 14539,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 15098,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 15185,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 18359,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 20368,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 20909,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 21844,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 22099,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 22535,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 22622,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 23780,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 24122,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 24568,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 24778,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 25862,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 26016,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 28471,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 28752,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 30616,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        },
+        {
+          "objectid": 34909,
+          "topological_equal": true,
+          "exact_coordinates": true,
+          "hausdorff_m": 0.0,
+          "length_delta_m": 0.0
+        }
+      ],
+      "tiny_parts": [
+        {
+          "objectid": 7611,
+          "path": [],
+          "length_m": 0.08772342684793151,
+          "equal_local_parts": [
+            "7611:1"
+          ]
+        },
+        {
+          "objectid": 20909,
+          "path": [
+            1
+          ],
+          "length_m": 0.06902071051204553,
+          "equal_local_parts": [
+            "20909:1"
+          ]
+        },
+        {
+          "objectid": 20909,
+          "path": [
+            2
+          ],
+          "length_m": 0.03575874442684792,
+          "equal_local_parts": [
+            "20909:2"
+          ]
+        },
+        {
+          "objectid": 24568,
+          "path": [
+            1
+          ],
+          "length_m": 0.21823772344495745,
+          "equal_local_parts": [
+            "24568:1"
+          ]
+        },
+        {
+          "objectid": 28471,
+          "path": [
+            1
+          ],
+          "length_m": 0.12704841332375694,
+          "equal_local_parts": [
+            "28471:1"
+          ]
+        },
+        {
+          "objectid": 28471,
+          "path": [
+            2
+          ],
+          "length_m": 0.032630835996648656,
+          "equal_local_parts": [
+            "28471:2"
+          ]
+        }
+      ]
+    },
+    "siniestros": {
+      "columns": [
+        [
+          "objectid",
+          "bigint"
+        ],
+        [
+          "radicado",
+          "numeric"
+        ],
+        [
+          "fecha_siniestro",
+          "text"
+        ],
+        [
+          "hora_siniestro",
+          "text"
+        ],
+        [
+          "dia",
+          "text"
+        ],
+        [
+          "mes",
+          "text"
+        ],
+        [
+          "anio",
+          "integer"
+        ],
+        [
+          "clase_siniestro",
+          "text"
+        ],
+        [
+          "gravedad_siniestro",
+          "text"
+        ],
+        [
+          "direccion",
+          "text"
+        ],
+        [
+          "barrio",
+          "text"
+        ],
+        [
+          "num_comuna",
+          "text"
+        ],
+        [
+          "nom_comuna",
+          "text"
+        ],
+        [
+          "latitud",
+          "double precision"
+        ],
+        [
+          "longitud",
+          "double precision"
+        ],
+        [
+          "geom",
+          "USER-DEFINED"
+        ]
+      ],
+      "rows": 8332,
+      "geometries": [
+        [
+          "public",
+          "siniestros",
+          "geom",
+          4326,
+          "POINT"
+        ]
+      ],
+      "duplicate_ids": 0,
+      "null_ids": 0,
+      "territorial_counts": {
+        "Comuna 3": 8332
+      },
+      "years": {
+        "2019": 1524,
+        "2021": 1413,
+        "2022": 1317,
+        "2025": 1145,
+        "2020": 1142,
+        "2023": 942,
+        "2024": 849
+      },
+      "analysis_scope": "num_comuna=Comuna 3",
+      "scope_rows": 8332,
+      "srids": {
+        "4326": 8332
+      },
+      "coordinate_source": "database geometry",
+      "unusable_geometry_rows": 0,
+      "corridor_50m_rows": 604,
+      "corridor_ids_only_db": [],
+      "corridor_ids_only_local": [],
+      "scope_ids_only_db": [],
+      "scope_ids_only_local": [],
+      "max_longitude_delta_degrees": 1.4210854715202004e-14,
+      "max_latitude_delta_degrees": 5.329070518200751e-15,
+      "attribute_discrepancies": {
+        "fecha_siniestro": 0,
+        "gravedad_siniestro": 0,
+        "clase_siniestro": 0
+      },
+      "postgis_native": {
+        "scope": "all rows actually in public.siniestros",
+        "corridor_rows": 604,
+        "ids_only_sql": [],
+        "ids_only_local": [],
+        "proximity_50m_rows": 644,
+        "outside_rows": [
+          {
+            "objectid": 31424,
+            "road_distance_m": 0.8536494316317579,
+            "boundary_distance_m": 0.0017910602170277542
+          },
+          {
+            "objectid": 125795,
+            "road_distance_m": 1849.8989164772183,
+            "boundary_distance_m": 3.7305507366923587
+          },
+          {
+            "objectid": 140908,
+            "road_distance_m": 1536.991508788385,
+            "boundary_distance_m": 15.664917075981348
+          },
+          {
+            "objectid": 154532,
+            "road_distance_m": 1536.991508788385,
+            "boundary_distance_m": 15.664917075981348
+          },
+          {
+            "objectid": 192142,
+            "road_distance_m": 250.79011219725498,
+            "boundary_distance_m": 26.684031984600114
+          },
+          {
+            "objectid": 201975,
+            "road_distance_m": 0.8536494316317579,
+            "boundary_distance_m": 0.0017910602170277542
+          },
+          {
+            "objectid": 205871,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 207574,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 207727,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 209673,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 210661,
+            "road_distance_m": 0.0004929408392904377,
+            "boundary_distance_m": 0.00033265209556338697
+          },
+          {
+            "objectid": 211556,
+            "road_distance_m": 0.0003949369831868707,
+            "boundary_distance_m": 0.0002651790618853984
+          },
+          {
+            "objectid": 215023,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 215200,
+            "road_distance_m": 0.0004929408392904377,
+            "boundary_distance_m": 0.00033265209556338697
+          },
+          {
+            "objectid": 215606,
+            "road_distance_m": 0.0004929408392904377,
+            "boundary_distance_m": 0.00033265209556338697
+          },
+          {
+            "objectid": 216268,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 218852,
+            "road_distance_m": 0.06329408052336195,
+            "boundary_distance_m": 0.00026387860517388653
+          },
+          {
+            "objectid": 218911,
+            "road_distance_m": 0.0003949369831868707,
+            "boundary_distance_m": 0.0002651790618853984
+          },
+          {
+            "objectid": 218954,
+            "road_distance_m": 0.06329408052336195,
+            "boundary_distance_m": 0.00026387860517388653
+          },
+          {
+            "objectid": 220003,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 220034,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 223574,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 223651,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 224318,
+            "road_distance_m": 0.0004929408392904377,
+            "boundary_distance_m": 0.00033265209556338697
+          },
+          {
+            "objectid": 224622,
+            "road_distance_m": 0.0003949369831868707,
+            "boundary_distance_m": 0.0002651790618853984
+          },
+          {
+            "objectid": 224866,
+            "road_distance_m": 0.0004929408392904377,
+            "boundary_distance_m": 0.00033265209556338697
+          },
+          {
+            "objectid": 225221,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 225552,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 227512,
+            "road_distance_m": 0.0004929408392904377,
+            "boundary_distance_m": 0.00033265209556338697
+          },
+          {
+            "objectid": 227651,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 228739,
+            "road_distance_m": 0.06329408052336195,
+            "boundary_distance_m": 0.00026387860517388653
+          },
+          {
+            "objectid": 228861,
+            "road_distance_m": 0.0004929408392904377,
+            "boundary_distance_m": 0.00033265209556338697
+          },
+          {
+            "objectid": 229851,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 230146,
+            "road_distance_m": 0.0004929408392904377,
+            "boundary_distance_m": 0.00033265209556338697
+          },
+          {
+            "objectid": 231228,
+            "road_distance_m": 0.0004929408392904377,
+            "boundary_distance_m": 0.00033265209556338697
+          },
+          {
+            "objectid": 231624,
+            "road_distance_m": 0.06329408052336195,
+            "boundary_distance_m": 0.00026387860517388653
+          },
+          {
+            "objectid": 232230,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 232258,
+            "road_distance_m": 9.757519019471836,
+            "boundary_distance_m": 8.883652280534367e-05
+          },
+          {
+            "objectid": 232465,
+            "road_distance_m": 9.757519019471836,
+            "boundary_distance_m": 8.883652280534367e-05
+          },
+          {
+            "objectid": 233810,
+            "road_distance_m": 0.0004961930311323043,
+            "boundary_distance_m": 0.00019915488887375184
+          },
+          {
+            "objectid": 234244,
+            "road_distance_m": 0.0004736999294768908,
+            "boundary_distance_m": 3.271484445405189e-06
+          },
+          {
+            "objectid": 234412,
+            "road_distance_m": 0.06329408052336195,
+            "boundary_distance_m": 0.00026387860517388653
+          },
+          {
+            "objectid": 234827,
+            "road_distance_m": 9.757519019471836,
+            "boundary_distance_m": 8.883652280534367e-05
+          },
+          {
+            "objectid": 234898,
+            "road_distance_m": 0.0004736999294768908,
+            "boundary_distance_m": 3.271484445405189e-06
+          }
+        ],
+        "boundary_source": "local official polygon passed as WKB parameter; no database writes",
+        "buffer_quad_segs": 16
+      }
+    }
+  },
+  "read_only": "on",
+  "versions": [
+    "movimanrique45",
+    "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit",
+    "POSTGIS=\"3.6.2 3.6.2\" [EXTENSION] PGSQL=\"180\" GEOS=\"3.14.1dev-CAPI-1.20.4\" PROJ=\"8.2.1 NETWORK_ENABLED=OFF URL_ENDPOINT= USER_WRITABLE_DIRECTORY=C:\\WINDOWS\\ServiceProfiles\\NetworkService\\AppData\\Local/proj\" (compiled against PROJ 8.2.1) LIBXML=\"2.12.5\" LIBJSON=\"0.12\" LIBPROTOBUF=\"1.2.1\" WAGYU=\"0.5.0 (Internal)\""
+  ],
+  "available_tables": [
+    [
+      "public",
+      "carrera45_segmentos"
+    ],
+    [
+      "public",
+      "geography_columns"
+    ],
+    [
+      "public",
+      "geometry_columns"
+    ],
+    [
+      "public",
+      "siniestros"
+    ],
+    [
+      "public",
+      "spatial_ref_sys"
+    ]
+  ],
+  "geometry_columns": [
+    [
+      "public",
+      "siniestros",
+      "geom",
+      4326,
+      "POINT"
+    ],
+    [
+      "public",
+      "carrera45_segmentos",
+      "geometry",
+      9377,
+      "GEOMETRY"
+    ]
+  ],
+  "diagnosis": {
+    "configured_env": {
+      "PGPASSWORD": false,
+      "PGPASSFILE": false,
+      "PGSERVICE": false,
+      "PGSERVICEFILE": false,
+      "PGHOST": false,
+      "PGUSER": false,
+      "PGDATABASE": false
+    },
+    "default_pgpass_exists": false,
+    "initial_error": {
+      "type": "OperationalError",
+      "sqlstate": null,
+      "message": "connection failed: connection to server at \"127.0.0.1\", port 5432 failed: fe_sendauth: no password supplied\nMultiple connection attempts failed. All failures were:\n- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at \"::1\", port 5432 failed: fe_sendauth: no password supplied\n- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at \"127.0.0.1\", port 5432 failed: fe_sendauth: no password supplied"
+    }
+  }
+}
