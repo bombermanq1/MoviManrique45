@@ -1,0 +1,37 @@
+{
+  "version": "cierre_v1",
+  "proposito": "Insumos locales no versionados requeridos para exportar y demostrar el dashboard.",
+  "uso": "Ejecute scripts/verificar_insumos_demo.py antes de iniciar la demostración. El manifiesto no modifica ni redistribuye datos.",
+  "archivos": [
+    {
+      "ruta": "powerbi/geospatial/hechos_siniestros.csv",
+      "bytes": 1455487,
+      "sha256": "8669a986b371440993ccf21a99b3ecaffd881220e013e83ba6658916b0bf3c0b"
+    },
+    {
+      "ruta": "data/processed/siniestros_comuna3_limpios.csv",
+      "bytes": 1206310,
+      "sha256": "9f006d869941771ff6fa561f0137d5c7d7d4267dbe04586506590839cea56ce4"
+    },
+    {
+      "ruta": "data/processed/geospatial/web/carrera45.geojson",
+      "bytes": 7527,
+      "sha256": "dcb9e5219cef9c929590c5b2ef2aedd29652c63e20586fac3743e21c050f40b1"
+    },
+    {
+      "ruta": "data/processed/geospatial/web/zonas_prioritarias.geojson",
+      "bytes": 5714,
+      "sha256": "2fec3cb4c0567c3fe1b4e26db83c81e1d711bd4b0bf854ba2d60743554a4a197"
+    },
+    {
+      "ruta": "data/raw/comunas_medellin.geojson",
+      "bytes": 5971564,
+      "sha256": "d8a2b125fd2af0519bb59ba2f38e46533ad7a1989fb9742e964a3d3d981da177"
+    },
+    {
+      "ruta": "src/geospatial/ids_cierre_v1.json",
+      "bytes": 8353,
+      "sha256": "4567162690025861bc6b13d9c4ca8fa4c3dcc2d9ad07d5a83ab0ada44cb1430d"
+    }
+  ]
+}

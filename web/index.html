@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Tablero local de seguridad vial de Carrera 45 en Comuna 3 - Manrique.">
+  <title>MoviManrique45 · Seguridad vial</title>
+  <style>
+    :root{--ink:#0F172A;--teal:#14B8A6;--amber:#D97706;--wine:#BE123C;--slate:#64748B;--purple:#7C3AED;--blue:#2563EB;--bg:#F1F5F9;--line:#CBD5E1;--muted:#475569;--focus:#2563EB}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.45}.skip-link{position:absolute;left:12px;top:-50px;padding:8px 12px;background:#fff;color:var(--ink);z-index:20;border:2px solid var(--focus);border-radius:6px}.skip-link:focus{top:12px}header{padding:30px max(24px,calc((100vw - 1280px)/2));background:#fff;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}h1{margin:4px 0 0;font-size:clamp(28px,4vw,38px);line-height:1.1}header p{margin:9px 0 0;color:var(--muted);max-width:820px}.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.badge{padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:#f8fbfd;font-size:12px;font-weight:600}main{max-width:1280px;margin:auto;padding:22px 24px 48px}.panel,.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 1px 2px #172b4d08}.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 14px;font-size:20px}.section-title small{font-size:13px;font-weight:400;color:var(--muted)}.filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:14px;align-items:end}.filters label{font-size:13px;font-weight:700}.filters select{display:block;width:100%;min-height:122px;margin-top:6px;padding:6px;border:1px solid #aebccc;border-radius:6px;background:#fff;color:var(--ink)}.filters select:focus,button:focus,input:focus,svg:focus{outline:3px solid #a9ccff;outline-offset:2px}.filter-help{grid-column:1/-1;margin:0;color:var(--muted);font-size:12px}.button{appearance:none;border:1px solid #305886;background:#fff;color:#164676;border-radius:7px;padding:9px 12px;font:inherit;font-weight:650;cursor:pointer;white-space:nowrap}.button:hover{background:#edf5ff}.button.primary{background:var(--teal);border-color:var(--teal);color:#fff}.button.primary:hover{background:#00656b}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}.metric-label{font-size:13px;color:var(--muted)}.metric{font-size:30px;line-height:1.15;font-weight:750;margin-top:6px}.metric-subtitle{margin-top:4px;font-size:11px;color:var(--muted)}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.chart-row{display:flex;align-items:flex-end;gap:10px;min-height:230px;border-bottom:1px solid var(--line);padding:20px 8px 29px}.bar{flex:1;min-width:26px;background:var(--teal);position:relative;border-radius:4px 4px 0 0}.bar span{position:absolute;bottom:-24px;left:0;width:100%;font-size:12px;text-align:center}.bar em{position:absolute;top:-20px;left:0;width:100%;font-size:11px;text-align:center;font-style:normal}.empty{color:var(--muted);font-size:14px;margin:auto}.list{list-style:none;padding:0;margin:0}.list li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #edf0f4}.map-panel{margin-top:16px}.map-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px}.map-canvas{position:relative;min-width:0}.map-toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}.map-toolbar .button{padding:6px 9px;font-size:13px}#map{display:block;width:100%;height:570px;background:#f8fbfd;border:1px solid var(--line);border-radius:9px;touch-action:none;cursor:grab}#map.dragging{cursor:grabbing}.map-status{margin:8px 0 0;color:var(--muted);font-size:12px}.layer-controls{border:1px solid var(--line);border-radius:9px;padding:12px;margin:0}.layer-controls legend{padding:0 4px;font-weight:700;font-size:14px}.layer-controls label{display:flex;gap:8px;align-items:flex-start;margin:8px 0;font-size:13px}.layer-controls small{display:block;color:var(--muted);font-size:11px}.map-inspector{align-self:start;border:1px solid var(--line);border-radius:9px;padding:14px;background:#fbfcfe}.map-inspector h3{margin:0 0 8px;font-size:16px}.map-inspector p{margin:0;color:var(--muted);font-size:13px}.map-inspector dl{margin:10px 0 0}.map-inspector dt{font-size:12px;color:var(--muted)}.map-inspector dd{margin:0 0 9px;font-weight:650}.legend{display:flex;gap:13px;flex-wrap:wrap;font-size:12px;margin:12px 0}.legend span{display:inline-flex;align-items:center}.dot,.line-symbol,.area-symbol{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:5px;flex:none}.line-symbol{height:3px;border-radius:0}.area-symbol{border-radius:2px;background:#6d4c9130;border:1px solid var(--purple)}.note{font-size:13px;line-height:1.5;color:var(--muted)}.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.method-grid ol{margin:0;padding-left:20px}.method-grid li{margin-bottom:9px}.limitation-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.limitation-list article{padding:12px;border-left:4px solid var(--amber);background:#fffaf1;border-radius:0 8px 8px 0}.limitation-list h3{font-size:14px;margin:0 0 5px}.limitation-list p{font-size:13px;margin:0;color:#5d5138}.footer{margin-top:18px;font-size:12px;color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:980px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.map-layout{grid-template-columns:1fr}.layer-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}.layer-controls legend{grid-column:1/-1}.limitation-list{grid-template-columns:1fr 1fr}}@media(max-width:760px){main{padding:16px}.filters,.cards,.grid,.method-grid{grid-template-columns:1fr 1fr}.grid{display:block}.grid>.panel{margin-bottom:16px}.cards{gap:9px}.card{padding:14px}.metric{font-size:25px}#map{height:460px}}@media(max-width:500px){.filters,.cards,.method-grid,.limitation-list,.layer-controls{grid-template-columns:1fr}.filters .button{width:100%}#map{height:380px}.map-toolbar{display:grid;grid-template-columns:1fr 1fr}}
+    /* Identidad visual v2: conserva los identificadores y controles del MVP. */
+    body{background:linear-gradient(180deg,#eef6ff 0,#F1F5F9 360px);letter-spacing:.005em}
+    header{padding:28px max(24px,calc((100vw - 1280px)/2));background:linear-gradient(118deg,#0F172A 0%,#14213d 56%,#1d4ed8 150%);border:0;color:#fff;box-shadow:0 12px 32px #0f172a24}
+    header .eyebrow{color:#5eead4}.brand-row{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}.brand-mark{width:43px;height:43px;border:1px solid #5eead4;border-radius:12px;display:grid;place-items:center;color:#5eead4;font-weight:800;font-size:18px;box-shadow:inset 0 0 0 4px #14b8a61c}.brand-copy{display:flex;gap:13px;align-items:flex-start}.brand-copy h1{color:#fff}.brand-copy p{color:#dbeafe;max-width:810px}.topnav{display:flex;flex-wrap:wrap;gap:6px;padding-top:5px}.topnav a{color:#dbeafe;text-decoration:none;font-size:12px;font-weight:650;padding:7px 8px;border-radius:6px}.topnav a:hover,.topnav a:focus{color:#fff;background:#ffffff18}.badges{margin-top:20px}.badge{border-color:#ffffff2e;background:#ffffff10;color:#e2e8f0}.badge strong{color:#fff}
+    main{max-width:1320px;padding:26px 24px 60px}.panel,.card{border:1px solid #dbe4ef;box-shadow:0 8px 24px #0f172a0a;border-radius:16px}.panel{padding:22px}.section-title{font-size:21px;color:var(--ink)}.section-title small{font-size:13px}.filters{grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:18px}.filters select{border-color:#cbd5e1;background:#f8fafc}.button{border-color:#bfdbfe;color:#1d4ed8;border-radius:8px;transition:background .16s ease,transform .16s ease}.button:hover{background:#eff6ff;transform:translateY(-1px)}.button.primary{background:var(--blue);border-color:var(--blue)}.button.primary:hover{background:#1d4ed8}.cards{gap:16px}.card{position:relative;overflow:hidden;padding:18px;background:linear-gradient(145deg,#fff,#f8fbff)}.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--blue),var(--teal))}.metric-label{font-weight:700;color:#475569}.metric{color:#0F172A}.grid{gap:18px}.chart-row{border-color:#e2e8f0}.bar{background:linear-gradient(180deg,#14b8a6,#0f766e)}.map-panel{margin-top:20px}.map-layout{grid-template-columns:minmax(0,1fr) 284px;gap:18px}.map-toolbar{padding:8px;border:1px solid #dbe4ef;border-radius:10px;background:#f8fafc}.map-canvas{background:#fff;border-radius:12px}.map-status{padding:5px 2px}.layer-controls,.map-inspector{border-color:#dbe4ef;background:#fbfdff}.layer-controls label{padding:5px 0}.map-inspector{border-left:3px solid var(--blue)}.legend{padding:11px 13px;border-radius:9px;background:#f8fafc;border:1px solid #e2e8f0}.note{color:#475569}
+    .interventions{margin-top:20px}.intervention-intro{max-width:900px;color:#475569;margin:-4px 0 20px}.intervention-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:18px;align-items:start}.zone-browser{border:1px solid #dbe4ef;border-radius:12px;background:#f8fafc;padding:14px;position:sticky;top:14px}.zone-browser label{display:block;font-size:13px;font-weight:750;margin-bottom:7px}.zone-browser select{width:100%;padding:9px;border:1px solid #bfdbfe;border-radius:8px;background:#fff;color:var(--ink);font:inherit}.zone-list{display:grid;gap:6px;list-style:none;margin:13px 0 0;padding:0;max-height:408px;overflow:auto}.zone-list button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 10px;border:1px solid transparent;border-radius:8px;background:transparent;color:#334155;text-align:left;font:inherit;font-size:12px;cursor:pointer}.zone-list button:hover,.zone-list button[aria-current="true"]{background:#e0f2fe;border-color:#93c5fd;color:#0f172a}.zone-list b{font-size:12px;color:#0f766e;white-space:nowrap}.zone-list small{display:block;color:#64748b;font-size:11px}.intervention-ficha{min-width:0}.zone-status{display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#fff7ed;color:#9a3412;border:1px solid #fed7aa;padding:5px 9px;font-size:12px;font-weight:750}.zone-status:before{content:"";width:7px;height:7px;border-radius:50%;background:#f97316}.zone-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px}.zone-heading h3{margin:0;font-size:24px;color:#0f172a}.zone-location{margin:4px 0 0;color:#64748b;font-size:13px}.zone-actions{display:flex;flex-wrap:wrap;gap:8px}.zone-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}.zone-metric{padding:13px;border:1px solid #dbe4ef;border-radius:10px;background:#fff}.zone-metric span{display:block;color:#64748b;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}.zone-metric strong{display:block;margin-top:3px;font-size:23px;color:#0f172a}.evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.evidence-block{border-top:2px solid #e2e8f0;padding-top:10px}.evidence-block h4{margin:0 0 7px;font-size:14px;color:#0f172a}.compact-list{list-style:none;padding:0;margin:0}.compact-list li{display:flex;justify-content:space-between;gap:8px;padding:4px 0;border-bottom:1px solid #f1f5f9;font-size:13px}.compact-list li:last-child{border-bottom:0}.observed{border-left:3px solid #14b8a6;padding-left:11px}.proposal{border-left:3px solid #2563eb;padding-left:11px}.field-checks{padding-left:19px;margin:7px 0;font-size:13px;color:#334155}.field-checks li{margin-bottom:5px}.candidate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:11px}.candidate{border:1px solid #dbe4ef;border-radius:10px;background:#fff}.candidate summary{cursor:pointer;padding:11px;font-size:13px;font-weight:750;color:#0f172a}.candidate .candidate-body{padding:0 11px 11px;font-size:12px;color:#475569}.candidate p{margin:7px 0}.candidate strong{color:#1e3a8a}.cost-note{margin-top:13px;padding:11px 13px;border-radius:9px;background:#fffbeb;border:1px solid #fde68a;color:#713f12;font-size:13px}.comparison{margin-top:20px}.comparison-table-wrap{overflow:auto;border:1px solid #dbe4ef;border-radius:10px}.comparison-table{width:100%;border-collapse:collapse;font-size:13px;min-width:620px}.comparison-table th{background:#0f172a;color:#fff;text-align:left;padding:10px}.comparison-table td{padding:9px 10px;border-top:1px solid #e2e8f0}.comparison-table tr:nth-child(even){background:#f8fafc}.comparison-table button{border:0;background:transparent;color:#1d4ed8;font:inherit;font-weight:750;cursor:pointer;text-decoration:underline}.module-limits{margin:16px 0 0;padding:13px 15px;border-radius:10px;background:#f8fafc;border:1px solid #e2e8f0;font-size:13px;color:#475569}.module-limits h3{margin:0 0 7px;color:#0f172a;font-size:15px}.module-limits ul{margin:0;padding-left:18px}.module-limits li{margin:4px 0}
+    .method-grid{gap:18px}.limitation-list article{border-left-color:#f59e0b;background:#fffaf0}.footer{padding-top:12px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:980px){.brand-row{display:block}.topnav{margin-top:14px}.intervention-layout{grid-template-columns:1fr}.zone-browser{position:static}.zone-list{grid-template-columns:repeat(2,minmax(0,1fr));max-height:none}.candidate-grid{grid-template-columns:1fr}.evidence-grid{grid-template-columns:1fr}}@media(max-width:700px){header{padding:24px 18px}.brand-copy{display:block}.brand-mark{margin-bottom:11px}.topnav{gap:2px}.topnav a{padding:6px 5px}.zone-heading{display:block}.zone-status{margin-top:9px}.zone-metrics{grid-template-columns:1fr 1fr}.zone-list{grid-template-columns:1fr}.intervention-layout{gap:12px}.panel{padding:16px}.map-layout{grid-template-columns:1fr}.layer-controls{display:block}.candidate-grid{grid-template-columns:1fr}}@media(max-width:430px){.zone-metrics{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.filters{grid-template-columns:1fr}.map-toolbar{grid-template-columns:1fr 1fr}}
+    section[id]{scroll-margin-top:16px}.area-symbol.limit{background:#2563eb16;border-color:var(--blue)}.area-symbol.zone{background:#7c3aed20;border-color:var(--purple)}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header>
+    <div class="brand-row">
+      <div class="brand-copy">
+        <div class="brand-mark" aria-hidden="true">M45</div>
+        <div><div class="eyebrow">Análisis local de seguridad vial</div><h1>MoviManrique45</h1><p>Información para entender los siniestros viales y la accesibilidad cerca de la Carrera 45, en la Comuna 3 - Manrique. Datos históricos de 2019 a 2025.</p></div>
+      </div>
+      <nav class="topnav" aria-label="Navegación principal"><a href="#resumen">¿Qué encontramos?</a><a href="#geovisor">Geovisor</a><a href="#intervenciones">Posibles soluciones</a><a href="#metodologia">Metodología</a><a href="#limitaciones">Qué falta por revisar</a></nav>
+    </div>
+    <div class="badges" aria-label="Indicadores base del cierre"><span class="badge"><strong>8.332</strong> siniestros registrados</span><span class="badge"><strong>604</strong> dentro del corredor de 50 m</span><span class="badge">50 m: criterio de análisis</span><span class="badge">No demuestra causalidad</span></div>
+  </header>
+  <main id="contenido">
+    <section class="panel" aria-labelledby="filtros-title">
+      <h2 id="filtros-title" class="section-title">Explore los datos <small>Use los filtros para actualizar los indicadores, gráficos y mapa.</small></h2>
+      <div class="filters">
+        <label for="anio">Año<select id="anio" multiple aria-describedby="filter-help"></select></label>
+        <label for="barrio">Barrio registrado<select id="barrio" multiple aria-describedby="filter-help"></select></label>
+        <label for="categoria">Ubicación frente al corredor<select id="categoria" multiple aria-describedby="filter-help"></select></label>
+        <button class="button" id="restablecer" type="button">Limpiar filtros</button>
+        <p class="filter-help" id="filter-help">Puede elegir varios valores con Ctrl/Cmd o Mayús. La clasificación separa los casos dentro del corredor, los cercanos al límite, los que requieren revisión y los demás registros de Manrique.</p>
+      </div>
+    </section>
+
+    <section class="cards" id="resumen" aria-label="Indicadores de la selección">
+      <article class="card"><div class="metric-label">Siniestros seleccionados</div><output class="metric" id="total">—</output><div class="metric-subtitle">Según los filtros elegidos</div></article>
+      <article class="card"><div class="metric-label">Dentro del corredor (50 m)</div><output class="metric" id="principal">—</output><div class="metric-subtitle">Registros más cercanos al eje</div></article>
+      <article class="card"><div class="metric-label">Casos cerca del límite</div><output class="metric" id="borde">—</output><div class="metric-subtitle">Se muestran aparte del corredor</div></article>
+      <article class="card"><div class="metric-label">Casos por revisar</div><output class="metric" id="revision">—</output><div class="metric-subtitle">La ubicación necesita validación</div></article>
+    </section>
+
+    <section class="grid" aria-label="Resumen de distribuciones">
+      <article class="panel"><h2 class="section-title">Siniestros por año <small id="anual-note">Conteo de registros seleccionados</small></h2><div id="anual" class="chart-row" role="img" aria-label="Gráfico de barras de siniestros por año"></div></article>
+      <article class="panel"><h2 class="section-title">Gravedad registrada</h2><ul id="gravedad" class="list" aria-live="polite"></ul><h2 class="section-title" style="margin-top:24px">Tipo de siniestro</h2><ul id="tipo" class="list" aria-live="polite"></ul></article>
+    </section>
+
+    <section class="panel map-panel" id="geovisor" aria-labelledby="map-title">
+      <h2 class="section-title" id="map-title">Mapa de la Carrera 45 <small>Acerque o aleje con la rueda, arrastre el mapa y seleccione una zona para conocerla.</small></h2>
+      <div class="map-layout">
+        <div class="map-canvas">
+          <div class="map-toolbar" aria-label="Controles del mapa"><button class="button primary" id="map-fit" type="button">Ver todo el mapa</button><button class="button" id="map-zoom-in" type="button" aria-label="Acercar mapa">＋</button><button class="button" id="map-zoom-out" type="button" aria-label="Alejar mapa">−</button></div>
+          <svg id="map" viewBox="0 0 1000 620" role="img" tabindex="0" aria-describedby="map-status" aria-label="Mapa interactivo de Manrique, Carrera 45, zonas identificadas y siniestros seleccionados"></svg>
+          <p class="map-status" id="map-status" aria-live="polite">Cargando información del mapa.</p>
+        </div>
+        <div>
+          <fieldset class="layer-controls" aria-label="Capas del geovisor">
+            <legend>Capas visibles</legend>
+            <label><input id="layer-limite" type="checkbox" checked> Límite oficial de Manrique</label>
+            <label><input id="layer-eje" type="checkbox" checked> Eje definitivo Carrera 45 <small>26 segmentos, 1.698,67 m.</small></label>
+            <label><input id="layer-zonas" type="checkbox" checked> Zonas identificadas <small>Seleccione una zona para ver su información.</small></label>
+            <label><input id="layer-principal" type="checkbox" checked> Dentro del corredor (50 m) <small>604 registros.</small></label>
+            <label><input id="layer-borde" type="checkbox" checked> Cerca del límite del corredor <small>40 registros.</small></label>
+            <label><input id="layer-revision" type="checkbox" checked> Ubicación por revisar <small>4 registros.</small></label>
+            <label><input id="layer-resto" type="checkbox"> Otros registros de Manrique <small>7.684 registros; apagados para que el corredor se lea mejor.</small></label>
+          </fieldset>
+          <aside class="map-inspector" aria-live="polite" aria-labelledby="zone-title"><h3 id="zone-title">Información de la zona</h3><div id="zona-consulta"><p>Seleccione una zona identificada en el mapa para ver sus registros históricos.</p></div></aside>
+        </div>
+      </div>
+      <div class="legend" aria-label="Leyenda del mapa"><span><i class="area-symbol limit"></i>Límite de Manrique</span><span><i class="line-symbol" style="background:#14b8a6"></i>Eje Carrera 45</span><span><i class="area-symbol zone"></i>Zona identificada</span><span><i class="dot" style="background:#14b8a6"></i>Dentro del corredor</span><span><i class="dot" style="background:#d97706"></i>Cerca del límite</span><span><i class="dot" style="background:#be123c"></i>Por revisar</span></div>
+      <p class="note">El mapa reúne registros históricos y capas derivadas validadas. “Otros registros de Manrique” empieza apagado porque sus 7.684 puntos pueden ocultar el corredor; activarlo no crea ni elimina registros.</p>
+    </section>
+
+    <section class="panel interventions" id="intervenciones" aria-labelledby="interventions-title">
+      <h2 class="section-title" id="interventions-title">Posibles soluciones en la Carrera 45 <small>Información histórica para orientar la revisión de campo.</small></h2>
+      <p class="intervention-intro">Seleccione una de las 12 zonas identificadas. Cada ficha muestra los registros históricos de la celda, su ubicación en el mapa y medidas que podrían evaluarse. No representa obras aprobadas ni ejecutadas.</p>
+      <div class="intervention-layout">
+        <aside class="zone-browser" aria-label="Selector de zonas identificadas">
+          <label for="zona-selector">Zona identificada</label>
+          <select id="zona-selector" aria-describedby="zona-selector-help"></select>
+          <p class="note" id="zona-selector-help">El orden solo muestra cuántos registros históricos hay en cada celda; no es una clasificación oficial de riesgo.</p>
+          <ol class="zone-list" id="zona-list" aria-label="Listado de las 12 zonas"></ol>
+        </aside>
+        <article class="intervention-ficha" id="zona-ficha" aria-live="polite"><p class="note">Cargando ficha de intervención.</p></article>
+      </div>
+      <section class="comparison" aria-labelledby="comparison-title">
+        <h3 class="section-title" id="comparison-title">Zonas identificadas <small>Ordenadas por registros históricos, sin puntaje de riesgo ni prioridad oficial.</small></h3>
+        <div class="comparison-table-wrap"><table class="comparison-table"><thead><tr><th>Orden</th><th>Zona</th><th>Registros históricos</th><th>Dentro del corredor</th><th>Estado</th><th>Ver detalle</th></tr></thead><tbody id="zona-comparacion"></tbody></table></div>
+      </section>
+      <section class="module-limits" aria-labelledby="module-limits-title"><h3 id="module-limits-title">Qué falta por revisar</h3><ul id="intervenciones-limitaciones"></ul></section>
+    </section>
+
+    <section class="method-grid" aria-label="Metodología y trazabilidad">
+      <article class="panel" id="metodologia">
+        <h2 class="section-title">Cómo se construyó el análisis</h2>
+        <ol>
+          <li>Partimos de 8.332 siniestros registrados en la Comuna 3 - Manrique. Se conservan sus identificadores y coordenadas originales.</li>
+          <li>El eje de Carrera 45 tiene 26 segmentos y se recortó con el límite oficial de Manrique. No se unieron ni extendieron líneas de forma artificial.</li>
+          <li>El corredor de análisis se construyó a 50 m del eje y se limitó al territorio oficial de Manrique.</li>
+          <li>Los 604 registros dentro del corredor son el indicador principal. Los 40 cercanos al límite y cuatro casos por revisar se muestran aparte.</li>
+          <li>Las 12 zonas identificadas reúnen concentraciones históricas de registros. Ayudan a organizar la revisión, pero no explican por sí solas las causas ni miden riesgo.</li>
+          <li>Antes de publicar el tablero se verifica que estén los 8.332 registros, que cada categoría conserve sus casos y que no cambien los identificadores validados.</li>
+        </ol>
+      </article>
+      <article class="panel" id="calidad">
+        <h2 class="section-title">Datos y trazabilidad</h2>
+        <p class="note">El tablero lee una copia preparada para consulta. La exportación se detiene si cambian los 8.332 registros, las coordenadas asociadas o los identificadores validados de cada categoría.</p>
+        <p class="note">El límite de Manrique proviene de la capa oficial de comunas. Esta interfaz no modifica las fuentes RAW ni los datos ya validados.</p>
+        <p class="note">La malla vial original tiene una diferencia documentada entre el CRS declarado y sus coordenadas. El eje final se validó en EPSG:9377 antes de llegar al geovisor.</p>
+      </article>
+    </section>
+
+    <section class="panel" id="limitaciones" style="margin-top:16px" aria-labelledby="limits-title">
+      <h2 class="section-title" id="limits-title">Qué falta por revisar</h2>
+      <div class="limitation-list">
+        <article><h3>50 m no es una norma vial</h3><p>Es una delimitación analítica adoptada para el proyecto. No constituye una norma de ingeniería vial ni demuestra causalidad.</p></article>
+        <article><h3>Los registros no muestran exposición</h3><p>El tablero cuenta siniestros reportados; no incluye flujo vehicular, peatones, kilómetros recorridos ni tasas de riesgo.</p></article>
+        <article><h3>Casos cerca del límite</h3><p>Los 40 registros cercanos al borde se muestran por separado para no ampliar el indicador principal por tolerancias geométricas.</p></article>
+        <article><h3>Cuatro ubicaciones por revisar</h3><p>Estos cuatro registros se conservan sin reclasificarlos automáticamente desde la visualización.</p></article>
+        <article><h3>Una lectura histórica</h3><p>El periodo 2019–2025 describe registros históricos. Una actualización de las fuentes puede cambiar conteos, geometrías o el contexto futuro.</p></article>
+        <article><h3>Zona identificada no significa riesgo</h3><p>Las zonas ayudan a organizar la revisión de campo; no son una predicción, un índice de riesgo ni una recomendación automática de intervención.</p></article>
+      </div>
+    </section>
+    <p class="footer">Herramienta local de consulta · Fuentes: Alcaldía de Medellín y productos geoespaciales reproducibles del proyecto. Para abrir el tablero, ejecute el exportador y use un servidor HTTP local.</p>
+  </main>
+<script>
+(() => {
+  'use strict';
+  const WIDTH = 1000, HEIGHT = 620;
+  const nombres = {principal_50m:'Dentro del corredor (50 m)', sensibilidad_borde:'Cerca del límite del corredor', revision_territorial:'Ubicación por revisar', resto_manrique:'Otros registros de Manrique'};
+  const colores = {principal_50m:'#14b8a6', sensibilidad_borde:'#d97706', revision_territorial:'#be123c', resto_manrique:'#64748b'};
+  const capasCategoria = {principal_50m:'layer-principal', sensibilidad_borde:'layer-borde', revision_territorial:'layer-revision', resto_manrique:'layer-resto'};
+  const esperado = {principal_50m:604, sensibilidad_borde:40, revision_territorial:4, resto_manrique:7684};
+  const estado = {geo:null, intervenciones:null, base:[], filtrados:[], vista:null, vistaBase:null, arrastre:null, zonaActiva:null, pendientes:false};
+  const fmt = n => new Intl.NumberFormat('es-CO').format(n);
+  const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+  const mapa = document.getElementById('map');
+
+  function conteos(datos, campo) { return datos.reduce((acumulado, fila) => { acumulado[fila[campo]] = (acumulado[fila[campo]] || 0) + 1; return acumulado; }, {}); }
+  function valores(datos, campo) { return [...new Set(datos.map(fila => String(fila[campo] ?? 'Sin dato')))].sort((a,b) => a.localeCompare(b, 'es', {numeric:true})); }
+  function seleccionados(id) { return new Set([...document.getElementById(id).selectedOptions].map(opcion => opcion.value)); }
+  function llenarOpciones(id, opciones) { const selector = document.getElementById(id); selector.innerHTML = opciones.map(valor => `<option value="${esc(valor)}" selected>${esc(id === 'categoria' ? nombres[valor] : valor)}</option>`).join(''); }
+  function lista(id, objeto) { const destino = document.getElementById(id); const entradas = Object.entries(objeto).sort((a,b) => b[1] - a[1]); destino.innerHTML = entradas.length ? entradas.map(([clave,valor]) => `<li><span>${esc(clave)}</span><b>${fmt(valor)}</b></li>`).join('') : '<li><span>Sin registros para la selección</span><b>0</b></li>'; }
+  function validarPayload(geo) {
+    if (!geo || !Array.isArray(geo.eventos) || geo.eventos.length !== 8332) throw new Error('El tablero requiere exactamente 8.332 eventos.');
+    if (new Set(geo.eventos.map(fila => String(fila.evento_id))).size !== 8332) throw new Error('Los IDs de eventos no son únicos.');
+    const actual = conteos(geo.eventos, 'categoria_analisis');
+    if (Object.keys(esperado).some(clave => actual[clave] !== esperado[clave])) throw new Error('Los conteos de clasificación no coinciden con el cierre validado.');
+    if (!geo.limite_manrique || geo.limite_manrique.type !== 'FeatureCollection' || geo.limite_manrique.features.length !== 1) throw new Error('No se encontró un único límite oficial de Manrique.');
+    if (!geo.carrera45?.features?.length || !geo.zonas_prioritarias?.features?.length) throw new Error('Faltan capas geográficas requeridas.');
+  }
+  function validarIntervenciones(modulo, geo) {
+    if (!modulo || !Array.isArray(modulo.zonas) || modulo.zonas.length !== 12) throw new Error('El módulo requiere exactamente 12 fichas de zonas identificadas.');
+    if (!Array.isArray(modulo.catalogo_intervenciones) || modulo.catalogo_intervenciones.length !== 8) throw new Error('El catálogo de intervenciones está incompleto.');
+    if (modulo.metadatos?.eventos_validados !== 8332 || modulo.metadatos?.zonas_exploratorias !== 12) throw new Error('Los metadatos del módulo no coinciden con el cierre validado.');
+    const zonasMapa = new Map(geo.zonas_prioritarias.features.map(feature => [String(feature.properties?.zona_id), Number(feature.properties?.cantidad)]));
+    const vistos = new Set();
+    modulo.zonas.forEach(zona => {
+      const id = String(zona.zona_id);
+      if (vistos.has(id) || !zonasMapa.has(id)) throw new Error('El módulo contiene una zona inexistente o repetida.');
+      vistos.add(id);
+      if (zona.estado_evaluacion !== 'Pendiente de inspección') throw new Error('El estado inicial de una propuesta no es válido.');
+      if (zona.diagnostico_historico?.registros_historicos !== zonasMapa.get(id)) throw new Error(`El conteo histórico de ${id} no coincide con la capa de zonas.`);
+    });
+    if (vistos.size !== zonasMapa.size) throw new Error('Faltan fichas de zonas identificadas.');
+  }
+  function actualizarGraficas(datos) {
+    const anual = conteos(datos, 'anio'); const destino = document.getElementById('anual'); const valoresAnuales = Object.values(anual); const maximo = Math.max(...valoresAnuales, 1);
+    destino.innerHTML = valoresAnuales.length ? Object.entries(anual).sort((a,b) => Number(a[0]) - Number(b[0])).map(([anio, cantidad]) => `<div class="bar" style="height:${Math.max(4, cantidad / maximo * 180)}px"><em>${fmt(cantidad)}</em><span>${esc(anio)}</span></div>`).join('') : '<p class="empty">No hay registros para la selección.</p>';
+    destino.setAttribute('aria-label', valoresAnuales.length ? `Evolución anual: ${Object.entries(anual).map(([anio,cantidad]) => `${anio}, ${cantidad}`).join('; ')}` : 'Sin registros para la selección');
+    lista('gravedad', conteos(datos, 'gravedad_siniestro')); lista('tipo', conteos(datos, 'clase_siniestro'));
+  }
+  function recorrerCoordenadas(valor, salida) { if (!Array.isArray(valor)) return; if (typeof valor[0] === 'number' && typeof valor[1] === 'number') { salida.push(valor); } else { valor.forEach(parte => recorrerCoordenadas(parte, salida)); } }
+  function boundsDeCapas() {
+    const puntos = [];
+    [estado.geo.limite_manrique, estado.geo.carrera45, estado.geo.zonas_prioritarias].forEach(capa => capa.features.forEach(feature => recorrerCoordenadas(feature.geometry.coordinates, puntos)));
+    estado.base.forEach(evento => puntos.push([evento.longitud, evento.latitud]));
+    let minX = Math.min(...puntos.map(punto => punto[0])), maxX = Math.max(...puntos.map(punto => punto[0]));
+    let minY = Math.min(...puntos.map(punto => punto[1])), maxY = Math.max(...puntos.map(punto => punto[1]));
+    let ancho = Math.max(maxX - minX, 0.001), alto = Math.max(maxY - minY, 0.001); const proporcion = WIDTH / HEIGHT;
+    if (ancho / alto < proporcion) ancho = alto * proporcion; else alto = ancho / proporcion;
+    const centroX = (minX + maxX) / 2, centroY = (minY + maxY) / 2; ancho *= 1.14; alto *= 1.14;
+    return {x:centroX - ancho / 2, y:centroY - alto / 2, w:ancho, h:alto};
+  }
+  function proyectar(punto) { const vista = estado.vista; return [((punto[0] - vista.x) / vista.w) * WIDTH, HEIGHT - ((punto[1] - vista.y) / vista.h) * HEIGHT]; }
+  function ruta(geometria) {
+    const linea = coordenadas => 'M ' + coordenadas.map(punto => proyectar(punto).join(' ')).join(' L ');
+    if (geometria.type === 'LineString') return linea(geometria.coordinates);
+    if (geometria.type === 'MultiLineString' || geometria.type === 'Polygon') return geometria.coordinates.map(linea).join(' ');
+    if (geometria.type === 'MultiPolygon') return geometria.coordinates.flatMap(polygon => polygon.map(linea)).join(' ');
+    return '';
+  }
+  function capasActivas() { return Object.fromEntries(Object.entries(capasCategoria).map(([categoria,id]) => [categoria, document.getElementById(id).checked])); }
+  function escalaAproximada() {
+    const latitudMedia = estado.vista.y + estado.vista.h / 2; const metrosPorGrado = 111320 * Math.cos(latitudMedia * Math.PI / 180); const objetivo = estado.vista.w * metrosPorGrado / 5;
+    const candidatas = [10,20,50,100,200,500,1000,2000,5000,10000]; const metros = candidatas.reduce((mejor, valor) => Math.abs(valor - objetivo) < Math.abs(mejor - objetivo) ? valor : mejor, candidatas[0]);
+    return {metros, pixeles: Math.max(25, Math.min(250, metros / metrosPorGrado / estado.vista.w * WIDTH))};
+  }
+  function dibujarMapa() {
+    if (!estado.geo || !estado.vista) return;
+    const capas = capasActivas(); const visibles = estado.filtrados.filter(evento => capas[evento.categoria_analisis]); const partes = ['<title>Mapa de la Carrera 45 en Manrique</title>'];
+    if (document.getElementById('layer-limite').checked) estado.geo.limite_manrique.features.forEach(feature => partes.push(`<path d="${ruta(feature.geometry)}" fill="#2f69bf14" fill-rule="evenodd" stroke="#2f69bf" stroke-width="2" vector-effect="non-scaling-stroke"><title>Límite oficial Comuna 3 - Manrique</title></path>`));
+    if (document.getElementById('layer-zonas').checked) estado.geo.zonas_prioritarias.features.forEach(feature => { const propiedades = feature.properties || {}; const activa = estado.zonaActiva === propiedades.zona_id ? ' stroke-width="4"' : ' stroke-width="1.5"'; partes.push(`<path class="zona" tabindex="0" role="button" aria-label="Ver zona ${esc(propiedades.zona_id)} con ${fmt(propiedades.cantidad || 0)} registros históricos" data-zona-id="${esc(propiedades.zona_id)}" d="${ruta(feature.geometry)}" fill="#6d4c9120" fill-rule="evenodd" stroke="#6d4c91"${activa}><title>Zona ${esc(propiedades.zona_id)}: ${fmt(propiedades.cantidad || 0)} registros históricos</title></path>`); });
+    visibles.forEach(evento => { const punto = proyectar([evento.longitud, evento.latitud]); partes.push(`<circle cx="${punto[0]}" cy="${punto[1]}" r="${evento.categoria_analisis === 'resto_manrique' ? 1.35 : 3}" fill="${colores[evento.categoria_analisis]}" fill-opacity="${evento.categoria_analisis === 'resto_manrique' ? '.35' : '.82'}"><title>Evento ${esc(evento.evento_id)} · ${esc(nombres[evento.categoria_analisis])} · ${esc(evento.anio)}</title></circle>`); });
+    if (document.getElementById('layer-eje').checked) estado.geo.carrera45.features.forEach(feature => partes.push(`<path d="${ruta(feature.geometry)}" fill="none" stroke="#14b8a6" stroke-width="4" vector-effect="non-scaling-stroke"><title>Eje definitivo Carrera 45</title></path>`));
+    const escala = escalaAproximada(); partes.push(`<g aria-hidden="true"><path d="M 60 572 h ${esc(escala.pixeles)}" stroke="#172b4d" stroke-width="4"/><path d="M 60 567 v 10 M ${60 + escala.pixeles} 567 v 10" stroke="#172b4d" stroke-width="2"/><text x="60" y="596" fill="#172b4d" font-size="14">${fmt(escala.metros)} m aprox.</text><path d="M 950 80 l -12 28 h 24 z" fill="#172b4d"/><text x="945" y="68" text-anchor="middle" fill="#172b4d" font-size="16" font-weight="700">N</text></g>`);
+    mapa.innerHTML = partes.join(''); mapa.setAttribute('aria-label', `Mapa con ${fmt(visibles.length)} registros visibles según los filtros y capas activas.`);
+    document.getElementById('map-status').textContent = `Mostrando ${fmt(visibles.length)} de ${fmt(estado.filtrados.length)} registros seleccionados. Use la rueda, arrastre el mapa o las flechas para explorarlo.`;
+  }
+  function programarMapa() { if (estado.pendientes) return; estado.pendientes = true; requestAnimationFrame(() => { estado.pendientes = false; dibujarMapa(); }); }
+  function actualizarConsultaZona() {
+    const destino = document.getElementById('zona-consulta'); const zona = estado.geo.zonas_prioritarias.features.find(feature => feature.properties?.zona_id === estado.zonaActiva);
+    if (!zona) { destino.innerHTML = '<p>Seleccione una zona identificada para ver sus registros históricos.</p>'; return; }
+    const propiedades = zona.properties || {}; destino.innerHTML = `<dl><dt>Identificador</dt><dd>${esc(propiedades.zona_id)}</dd><dt>Registros históricos</dt><dd>${fmt(propiedades.cantidad || 0)}</dd><dt>Para qué sirve</dt><dd>Ayuda a organizar la revisión de campo; no mide riesgo ni demuestra causalidad.</dd></dl>`;
+  }
+  function listaDeConteos(items, vacio = 'Sin datos observados') {
+    return items?.length ? `<ul class="compact-list">${items.map(item => `<li><span>${esc(item.valor)}</span><b>${fmt(item.cantidad)}</b></li>`).join('')}</ul>` : `<p class="note">${esc(vacio)}</p>`;
+  }
+  function fichaDeZona(zona) {
+    const historico = zona.diagnostico_historico || {}; const evidencia = zona.evidencia_geoespacial || {}; const ubicacion = zona.ubicacion || {}; const costos = zona.costos_preliminares || {}; const catalogo = new Map(estado.intervenciones.catalogo_intervenciones.map(medida => [medida.id, medida]));
+    const segmentos = evidencia.segmentos_eje_intersectados_objectid?.length ? evidencia.segmentos_eje_intersectados_objectid.map(esc).join(', ') : 'Sin intersección geométrica con el eje exportado';
+    const centro = ubicacion.centroide_representativo_wgs84 || {}; const candidatos = (zona.intervenciones_candidatas || []).map(id => catalogo.get(id)).filter(Boolean);
+    const tarjetas = candidatos.map(medida => `<details class="candidate"><summary>${esc(medida.nombre)}</summary><div class="candidate-body"><p>${esc(medida.descripcion)}</p><p><strong>Qué podría atender:</strong> ${esc(medida.problema_atendido)}</p><p><strong>Qué se espera mejorar:</strong> ${esc(medida.beneficio_hipotesis)}</p><p><strong>Qué habría que verificar:</strong> ${esc(medida.condiciones_necesarias)}</p><p><strong>Quién debe evaluarlo:</strong> ${esc(medida.entidad_evaluadora)}. Inspección de campo: ${medida.requiere_inspeccion_campo ? 'requerida' : 'por definir'}.</p></div></details>`).join('');
+    return `<div class="zone-heading"><div><h3>Zona ${esc(zona.zona_id)}</h3><p class="zone-location">${esc(ubicacion.referencia || 'Ubicación de referencia')}. Centroide: ${Number(centro.latitud).toFixed(6)}, ${Number(centro.longitud).toFixed(6)}.</p></div><div class="zone-actions"><span class="zone-status">${esc(zona.estado_evaluacion)}</span><button class="button" type="button" data-zone-action="ver-mapa">Ver en el mapa</button></div></div><div class="zone-metrics"><article class="zone-metric"><span>Registros históricos</span><strong>${fmt(historico.registros_historicos || 0)}</strong></article><article class="zone-metric"><span>Dentro del corredor (50 m)</span><strong>${fmt(historico.corredor_estricto_50m || 0)}</strong></article><article class="zone-metric"><span>Orden de consulta</span><strong>#${fmt(zona.comparacion_exploratoria?.orden_por_registros_historicos || 0)}</strong></article></div><div class="evidence-grid"><section class="evidence-block observed"><h4>¿Qué encontramos?</h4><p class="note">Periodo ${esc(historico.periodo?.inicio)}–${esc(historico.periodo?.fin)}. ${esc(zona.justificacion || '')}</p><h4>Gravedad registrada</h4>${listaDeConteos(historico.por_gravedad)}<h4>Tipos registrados</h4>${listaDeConteos(historico.por_tipo)}</section><section class="evidence-block observed"><h4>Relación con el eje vial</h4><p class="note">Tramos del eje que pasan por esta zona: <b>${segmentos}</b>.</p><p class="note">${esc(evidencia.mensaje_segmento || '')}</p><h4>Barrios registrados</h4>${listaDeConteos(historico.barrios_nominales_observados)}<h4>Ubicación frente al corredor</h4>${listaDeConteos(historico.por_categoria_analisis)}</section><section class="evidence-block proposal"><h4>Qué revisar en campo</h4><ul class="field-checks">${(zona.condiciones_por_verificar || []).map(item => `<li>${esc(item)}</li>`).join('')}</ul><h4>Posibles soluciones</h4><p class="note">Estas opciones son puntos de partida para la revisión técnica y de campo.</p></section><section class="evidence-block proposal"><h4>Cómo leer esta zona</h4><p class="note">${esc(zona.comparacion_exploratoria?.criterio || '')}</p><p class="note">${esc(zona.comparacion_exploratoria?.aclaracion || '')}</p><div class="cost-note"><b>Costo por definir · ${esc(costos.estado || 'Pendiente')}</b><br>${esc(costos.nota || '')}</div></section></div><section aria-label="Posibles soluciones para la zona"><div class="candidate-grid">${tarjetas}</div></section>`;
+  }
+  function actualizarFichaIntervenciones() {
+    if (!estado.intervenciones || !estado.zonaActiva) return;
+    const zona = estado.intervenciones.zonas.find(item => item.zona_id === estado.zonaActiva); if (!zona) return;
+    const selector = document.getElementById('zona-selector'); if (selector) selector.value = zona.zona_id;
+    document.querySelectorAll('[data-zone-selector]').forEach(boton => boton.setAttribute('aria-current', String(boton.dataset.zoneSelector === zona.zona_id)));
+    document.getElementById('zona-ficha').innerHTML = fichaDeZona(zona);
+  }
+  function renderizarIntervenciones() {
+    if (!estado.intervenciones) return;
+    const zonas = [...estado.intervenciones.zonas].sort((a,b) => a.comparacion_exploratoria.orden_por_registros_historicos - b.comparacion_exploratoria.orden_por_registros_historicos);
+    const selector = document.getElementById('zona-selector');
+    selector.innerHTML = zonas.map(zona => `<option value="${esc(zona.zona_id)}">Zona ${esc(zona.zona_id)} · ${fmt(zona.diagnostico_historico.registros_historicos)} registros</option>`).join('');
+    document.getElementById('zona-list').innerHTML = zonas.map(zona => `<li><button type="button" data-zone-selector="${esc(zona.zona_id)}"><span><b>#${fmt(zona.comparacion_exploratoria.orden_por_registros_historicos)} · ${esc(zona.zona_id)}</b><small>${esc(zona.estado_evaluacion)}</small></span><b>${fmt(zona.diagnostico_historico.registros_historicos)}</b></button></li>`).join('');
+    document.getElementById('zona-comparacion').innerHTML = zonas.map(zona => `<tr><td>${fmt(zona.comparacion_exploratoria.orden_por_registros_historicos)}</td><td>${esc(zona.zona_id)}</td><td>${fmt(zona.diagnostico_historico.registros_historicos)}</td><td>${fmt(zona.diagnostico_historico.corredor_estricto_50m)}</td><td>${esc(zona.estado_evaluacion)}</td><td><button type="button" data-zone-selector="${esc(zona.zona_id)}">Ver zona</button></td></tr>`).join('');
+    document.getElementById('intervenciones-limitaciones').innerHTML = (estado.intervenciones.limitaciones_modulo || []).map(item => `<li>${esc(item)}</li>`).join('');
+  }
+  function enlazarIntervenciones() {
+    document.getElementById('zona-selector').addEventListener('change', evento => seleccionarZona(evento.target.value));
+    document.querySelectorAll('#zona-list, #zona-comparacion').forEach(contenedor => contenedor.addEventListener('click', evento => { const boton = evento.target.closest('[data-zone-selector]'); if (boton) seleccionarZona(boton.dataset.zoneSelector); }));
+    document.getElementById('zona-ficha').addEventListener('click', evento => { if (evento.target.closest('[data-zone-action="ver-mapa"]')) document.getElementById('geovisor').scrollIntoView({behavior:'smooth', block:'start'}); });
+  }
+  function seleccionarZona(id) { estado.zonaActiva = id; actualizarConsultaZona(); actualizarFichaIntervenciones(); dibujarMapa(); }
+  function ajustarVista() { estado.vista = {...estado.vistaBase}; programarMapa(); }
+  function puntoPantalla(evento) { const rect = mapa.getBoundingClientRect(); return {x:(evento.clientX - rect.left) / rect.width * WIDTH, y:(evento.clientY - rect.top) / rect.height * HEIGHT}; }
+  function acercar(factor, punto = {x:WIDTH / 2, y:HEIGHT / 2}) { const anterior = estado.vista; const xMapa = anterior.x + punto.x / WIDTH * anterior.w; const yMapa = anterior.y + (1 - punto.y / HEIGHT) * anterior.h; const ancho = Math.max(estado.vistaBase.w * .035, Math.min(estado.vistaBase.w * 4, anterior.w * factor)); const alto = ancho / (WIDTH / HEIGHT); estado.vista = {x:xMapa - punto.x / WIDTH * ancho, y:yMapa - (1 - punto.y / HEIGHT) * alto, w:ancho, h:alto}; programarMapa(); }
+  function manejarTeclado(evento) {
+    const paso = estado.vista.w * .1;
+    if (event.key === '+' || event.key === '=') { event.preventDefault(); acercar(.8); }
+    else if (event.key === '-') { event.preventDefault(); acercar(1.25); }
+    else if (event.key === '0') { event.preventDefault(); ajustarVista(); }
+    else if (event.key === 'ArrowLeft') { event.preventDefault(); estado.vista.x -= paso; programarMapa(); }
+    else if (event.key === 'ArrowRight') { event.preventDefault(); estado.vista.x += paso; programarMapa(); }
+    else if (event.key === 'ArrowUp') { event.preventDefault(); estado.vista.y += estado.vista.h * .1; programarMapa(); }
+    else if (event.key === 'ArrowDown') { event.preventDefault(); estado.vista.y -= estado.vista.h * .1; programarMapa(); }
+    else if ((event.key === 'Enter' || event.key === ' ') && event.target.dataset.zonaId) { event.preventDefault(); seleccionarZona(event.target.dataset.zonaId); }
+  }
+  function enlazarMapa() {
+    document.getElementById('map-fit').addEventListener('click', ajustarVista); document.getElementById('map-zoom-in').addEventListener('click', () => acercar(.8)); document.getElementById('map-zoom-out').addEventListener('click', () => acercar(1.25));
+    document.querySelectorAll('[id^="layer-"]').forEach(control => control.addEventListener('change', dibujarMapa));
+    mapa.addEventListener('click', evento => { const zona = evento.target.closest('[data-zona-id]'); if (zona) seleccionarZona(zona.dataset.zonaId); });
+    mapa.addEventListener('keydown', manejarTeclado);
+    mapa.addEventListener('wheel', evento => { evento.preventDefault(); acercar(evento.deltaY < 0 ? .82 : 1.22, puntoPantalla(evento)); }, {passive:false});
+    mapa.addEventListener('pointerdown', evento => { if (evento.target.closest('[data-zona-id]')) return; const punto = puntoPantalla(evento); estado.arrastre = {id:evento.pointerId, punto, vista:{...estado.vista}}; mapa.setPointerCapture(evento.pointerId); mapa.classList.add('dragging'); });
+    mapa.addEventListener('pointermove', evento => { if (!estado.arrastre || estado.arrastre.id !== evento.pointerId) return; const punto = puntoPantalla(evento); const dx = punto.x - estado.arrastre.punto.x, dy = punto.y - estado.arrastre.punto.y; const origen = estado.arrastre.vista; estado.vista = {x:origen.x - dx / WIDTH * origen.w, y:origen.y + dy / HEIGHT * origen.h, w:origen.w, h:origen.h}; programarMapa(); });
+    const terminarArrastre = evento => { if (estado.arrastre && estado.arrastre.id === evento.pointerId) { estado.arrastre = null; mapa.classList.remove('dragging'); } }; mapa.addEventListener('pointerup', terminarArrastre); mapa.addEventListener('pointercancel', terminarArrastre);
+  }
+  function renderizar() {
+    const anios = seleccionados('anio'), barrios = seleccionados('barrio'), categorias = seleccionados('categoria'); estado.filtrados = estado.base.filter(evento => anios.has(String(evento.anio)) && barrios.has(String(evento.barrio ?? 'Sin dato')) && categorias.has(evento.categoria_analisis)); const clasificacion = conteos(estado.filtrados, 'categoria_analisis');
+    document.getElementById('total').textContent = fmt(estado.filtrados.length); document.getElementById('principal').textContent = fmt(clasificacion.principal_50m || 0); document.getElementById('borde').textContent = fmt(clasificacion.sensibilidad_borde || 0); document.getElementById('revision').textContent = fmt(clasificacion.revision_territorial || 0);
+    actualizarGraficas(estado.filtrados); dibujarMapa();
+  }
+  function restablecerFiltros() { document.querySelectorAll('.filters select option').forEach(opcion => { opcion.selected = true; }); renderizar(); }
+  function mostrarError(error) { document.getElementById('contenido').insertAdjacentHTML('afterbegin', `<section class="panel" role="alert"><h2>No se pudo abrir la información</h2><p class="note">${esc(error.message || error)} Ejecute el exportador y abra la carpeta <code>web</code> con un servidor HTTP local.</p></section>`); }
+  Promise.all([
+    fetch('data/dashboard.json').then(respuesta => { if (!respuesta.ok) throw new Error(`Respuesta del dashboard HTTP ${respuesta.status}.`); return respuesta.json(); }),
+    fetch('data/intervenciones.json').then(respuesta => { if (!respuesta.ok) throw new Error(`Respuesta de intervenciones HTTP ${respuesta.status}.`); return respuesta.json(); }),
+  ]).then(([geo, intervenciones]) => {
+    validarPayload(geo); validarIntervenciones(intervenciones, geo); estado.geo = geo; estado.intervenciones = intervenciones; estado.base = geo.eventos; llenarOpciones('anio', valores(estado.base, 'anio')); llenarOpciones('barrio', valores(estado.base, 'barrio')); llenarOpciones('categoria', Object.keys(nombres)); estado.vistaBase = boundsDeCapas(); estado.vista = {...estado.vistaBase}; renderizarIntervenciones(); estado.zonaActiva = [...intervenciones.zonas].sort((a,b) => a.comparacion_exploratoria.orden_por_registros_historicos - b.comparacion_exploratoria.orden_por_registros_historicos)[0].zona_id; enlazarMapa(); enlazarIntervenciones(); actualizarFichaIntervenciones(); actualizarConsultaZona(); document.querySelectorAll('.filters select').forEach(selector => selector.addEventListener('change', renderizar)); document.getElementById('restablecer').addEventListener('click', restablecerFiltros); renderizar();
+  }).catch(mostrarError);
+})();
+</script>
+</body>
+</html>

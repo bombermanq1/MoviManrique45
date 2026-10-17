@@ -75,3 +75,5 @@ reports/sensitive/
 reports/geospatial/environment.json
 
 powerbi/geospatial/hechos_siniestros.csv
+
+.build/

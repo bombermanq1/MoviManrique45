@@ -1,0 +1,160 @@
+// Conteos base
+Registros =
+COUNTROWS ( FactSiniestros )
+
+Registros corredor =
+CALCULATE (
+    [Registros],
+    REMOVEFILTERS ( DimClasificacion ),
+    DimClasificacion[categoria_analisis] = "principal_50m"
+)
+
+Registros sensibilidad borde =
+CALCULATE (
+    [Registros],
+    REMOVEFILTERS ( DimClasificacion ),
+    DimClasificacion[categoria_analisis] = "sensibilidad_borde"
+)
+
+Registros revisión territorial =
+CALCULATE (
+    [Registros],
+    REMOVEFILTERS ( DimClasificacion ),
+    DimClasificacion[categoria_analisis] = "revision_territorial"
+)
+
+Registros resto Manrique =
+CALCULATE (
+    [Registros],
+    REMOVEFILTERS ( DimClasificacion ),
+    DimClasificacion[categoria_analisis] = "resto_manrique"
+)
+
+// Comparación del indicador principal: conserva fecha, tipo y gravedad.
+// Ignora únicamente dimensiones espaciales/territoriales que no pertenecen al denominador.
+Comuna 3 comparable =
+CALCULATE (
+    [Registros],
+    REMOVEFILTERS ( DimClasificacion ),
+    REMOVEFILTERS ( DimTerritorioNominal ),
+    REMOVEFILTERS ( DimTerritorioGeometrico ),
+    REMOVEFILTERS ( DimZona ),
+    REMOVEFILTERS ( DimSegmento )
+)
+
+Corredor comparable =
+CALCULATE (
+    [Registros corredor],
+    REMOVEFILTERS ( DimTerritorioNominal ),
+    REMOVEFILTERS ( DimTerritorioGeometrico ),
+    REMOVEFILTERS ( DimZona ),
+    REMOVEFILTERS ( DimSegmento )
+)
+
+Porcentaje corredor sobre Comuna 3 =
+DIVIDE ( [Corredor comparable], [Comuna 3 comparable] )
+
+Mediana distancia corredor m =
+CALCULATE (
+    MEDIAN ( FactSiniestros[distancia_carrera45_m] ),
+    REMOVEFILTERS ( DimClasificacion ),
+    DimClasificacion[categoria_analisis] = "principal_50m"
+)
+
+// Calidad y trazabilidad
+Registros sin zona =
+CALCULATE (
+    [Registros],
+    REMOVEFILTERS ( DimZona ),
+    DimZona[zona_id] = "SIN_ZONA"
+)
+
+Registros con coordenada validada =
+CALCULATE (
+    [Registros],
+    FactSiniestros[coordenada_valida] = TRUE ()
+)
+
+Zonas prioritarias de la versión =
+CALCULATE (
+    COUNTROWS ( DimZona ),
+    REMOVEFILTERS ( DimZona ),
+    DimZona[prioritaria] = TRUE ()
+)
+
+Zonas prioritarias con registros en selección =
+COUNTROWS (
+    FILTER (
+        ALL ( DimZona ),
+        DimZona[prioritaria] = TRUE ()
+            && CALCULATE ( [Registros] ) > 0
+    )
+)
+
+Fragmentos conservados de la versión =
+CALCULATE (
+    COUNTROWS ( RevisionFragmentos ),
+    REMOVEFILTERS ( DimSegmento ),
+    REMOVEFILTERS ( RevisionFragmentos )
+)
+
+// Comparaciones temporales descriptivas. DimFecha debe estar marcada como tabla de fechas.
+Registros mismo periodo anterior =
+CALCULATE (
+    [Registros],
+    SAMEPERIODLASTYEAR ( DimFecha[Fecha] )
+)
+
+Cambio absoluto anual =
+VAR Anterior = [Registros mismo periodo anterior]
+RETURN
+    IF ( ISBLANK ( Anterior ), BLANK (), [Registros] - Anterior )
+
+Cambio porcentual anual =
+VAR Anterior = [Registros mismo periodo anterior]
+RETURN
+    IF ( ISBLANK ( Anterior ), BLANK (), DIVIDE ( [Registros] - Anterior, Anterior ) )
+
+Corredor mismo periodo anterior =
+CALCULATE (
+    [Registros corredor],
+    SAMEPERIODLASTYEAR ( DimFecha[Fecha] )
+)
+
+Cambio porcentual corredor =
+VAR Anterior = [Corredor mismo periodo anterior]
+RETURN
+    IF ( ISBLANK ( Anterior ), BLANK (), DIVIDE ( [Registros corredor] - Anterior, Anterior ) )
+
+// El control ignora todos los filtros del reporte y compara los conjuntos completos.
+Integridad IDs principal =
+VAR Esperados =
+    CALCULATETABLE (
+        VALUES ( DimIdsCongelados[evento_id] ),
+        REMOVEFILTERS (),
+        DimIdsCongelados[categoria_analisis] = "principal_50m"
+    )
+VAR Observados =
+    CALCULATETABLE (
+        VALUES ( FactSiniestros[evento_id] ),
+        REMOVEFILTERS (),
+        FactSiniestros[categoria_analisis] = "principal_50m"
+    )
+VAR Faltantes = COUNTROWS ( EXCEPT ( Esperados, Observados ) )
+VAR Adicionales = COUNTROWS ( EXCEPT ( Observados, Esperados ) )
+RETURN
+    IF (
+        COUNTROWS ( Esperados ) = 604
+            && COUNTROWS ( Observados ) = 604
+            && Faltantes = 0
+            && Adicionales = 0,
+        "OK — 604 IDs congelados coinciden",
+        "ERROR — revisar el cierre geoespacial"
+    )
+
+Conteo IDs congelados principal =
+CALCULATE (
+    COUNTROWS ( DimIdsCongelados ),
+    REMOVEFILTERS ( DimIdsCongelados ),
+    DimIdsCongelados[categoria_analisis] = "principal_50m"
+)

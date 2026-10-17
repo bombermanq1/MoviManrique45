@@ -1,0 +1,6 @@
+# Dependencias opcionales de la alternativa Streamlit/PyDeck.
+# Incluye la base para que se pueda instalar desde un entorno limpio.
+-r requirements.txt
+streamlit>=1.50,<2.0
+plotly>=6.0,<7.0
+pydeck>=0.9,<1.0
