@@ -11,8 +11,7 @@ archivo monolítico anterior, que no podía pegarse directamente en Desktop.
 ## Orden de creación
 
 1. En **Administrar parámetros**, cree `pRaiz` como parámetro de texto. Su valor
-   es la carpeta raíz local del repositorio, por ejemplo
-   `C:\\Users\\matth\\OneDrive\\Escritorio\\ITM\\movimanrique45`. No agregue
+   es la carpeta raíz local del repositorio,
    credenciales ni una barra final.
 2. Cree las funciones: `fxRutaProyecto`, `fxCsv`, `fxBool` y `fxControlTabla`.
    Desactive su carga.
@@ -62,3 +61,4 @@ La sintaxis y la consistencia de las fuentes se validan de forma estática con
 `..\\validar_recursos_powerbi.py`; la ejecución final de M, las relaciones,
 DAX y los visuales requiere abrir Power BI Desktop. No se debe declarar un
 PBIX/PBIP funcional hasta completar esa prueba manual.
+      
