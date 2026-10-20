@@ -17,7 +17,7 @@ rutas y valide su integridad antes de iniciar la demo:
 ```
 
 El archivo `data/manifest_demo_v1.json` registra las rutas, tamaños y hashes
-SHA-256 esperados. No copie ni publique esos insumos en un repositorio público.
+SHA-256 esperados.
 
 ## Preparación inicial
 
