@@ -16,9 +16,7 @@ Su propósito es analizar datos de movilidad, accesibilidad y seguridad vial del
 
 - Dashboard y geovisor local demostrable: consulte [README_DEMO.md](README_DEMO.md).
 - Recursos de Power Query, DAX y modelo preparados en `powerbi/implementation/`.
-  No existe todavía un archivo PBIX/PBIP validado en Power BI Desktop.
-- No se implementa Machine Learning predictivo; el análisis exploratorio se
-  documenta explícitamente sin inferir riesgo ni causalidad.
+ 
 
 ## Tecnologías iniciales
 
@@ -26,9 +24,7 @@ Su propósito es analizar datos de movilidad, accesibilidad y seguridad vial del
 - Pandas
 - Requests
 
-El proyecto no incluye n8n. Power BI cuenta con recursos de implementación,
-pero no debe presentarse como un dashboard Power BI funcional hasta validar un
-PBIX/PBIP real. Tampoco se presenta el análisis exploratorio como ML funcional.
+
 
 ## Ingesta de siniestros viales
 
