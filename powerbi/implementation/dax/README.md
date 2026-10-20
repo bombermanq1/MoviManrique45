@@ -19,5 +19,4 @@ de gravedad. No las use como filas de una matriz por categoría: allí use
 sin filtros. Si muestra ERROR, no publique ni aplique el modelo; revise primero
 `ValidacionCierre` y `ControlCierreEstricto` en Power Query.
 
-Estas expresiones se revisaron estáticamente, pero todavía requieren compilación
-en el motor DAX de Power BI Desktop para considerarse validadas.
+
