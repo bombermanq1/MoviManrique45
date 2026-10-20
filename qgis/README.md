@@ -19,7 +19,7 @@ para compararlas. No editar ni guardar cambios sobre los archivos originales.
 Generación, reapertura y render probados con QGIS 3.44.15-Solothurn.
 Evidencia: [qgis_validation.json](../reports/geospatial/qgis_validation.json) y
 [vista previa](../reports/geospatial/qgis_preview.png). La vista fue inspeccionada
-visualmente; esto no sustituye la revisión técnica de cada fragmento.
+visualmente;
 
 Regenerar con el comando documentado en el [módulo](../src/geospatial/README.md).
 Cerrar el proyecto antes de regenerar sus GeoPackage para evitar bloqueos de Windows.
