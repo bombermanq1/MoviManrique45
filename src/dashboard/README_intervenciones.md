@@ -54,12 +54,8 @@ Cada ficha presenta estas medidas como opciones sujetas a inspección, diseño,
 autorización y evaluación de la entidad competente.
 
 El costo por zona se mantiene como **Pendiente de estudio técnico y
-presupuesto**. No hay cantidades de obra ni precios unitarios verificables
-para calcularlo responsablemente.
+presupuesto**. 
 
-## Qué falta por revisar
 
-Los registros históricos no incluyen exposición, volúmenes de tráfico,
-velocidades observadas, geometría detallada de la infraestructura ni auditoría
 de accesibilidad. Por ello, el módulo no estima riesgo, causalidad, efectividad
 ni prioridad institucional de una obra.
