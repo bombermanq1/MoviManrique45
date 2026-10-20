@@ -1,9 +1,3 @@
-# Recursos de implementación manual para Power BI
-
-Esta carpeta deja preparado todo lo que puede verificarse localmente sin crear
-un PBIX/PBIP de texto no probado. Los recursos leen las fuentes ya validadas y
-no modifican RAW, procesados, resultados geoespaciales ni PostgreSQL.
-
 ## Entregables preparados
 
 | Recurso | Uso |
