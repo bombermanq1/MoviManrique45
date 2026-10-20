@@ -15,8 +15,5 @@ para fijar la categoría de su tarjeta; conservan filtros temporales, de tipo y
 de gravedad. No las use como filas de una matriz por categoría: allí use
 `Registros`.
 
-`Integridad IDs principal` debe mostrar `OK — 604 IDs congelados coinciden`
-sin filtros. Si muestra ERROR, no publique ni aplique el modelo; revise primero
-`ValidacionCierre` y `ControlCierreEstricto` en Power Query.
 
 
