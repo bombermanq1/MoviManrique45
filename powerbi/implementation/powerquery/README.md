@@ -52,13 +52,7 @@ archivo monolítico anterior, que no podía pegarse directamente en Desktop.
 - 26 segmentos, 439 zonas base, 12 prioritarias, 6 fragmentos y 44 eventos
   sin zona (`SIN_ZONA`) dentro del modelo.
 
-Las consultas solo leen CSV/JSON locales. No usan PostgreSQL, PostGIS, APIs ni
-escriben sobre RAW, procesados o resultados geoespaciales.
 
-## Límites
 
-La sintaxis y la consistencia de las fuentes se validan de forma estática con
-`..\\validar_recursos_powerbi.py`; la ejecución final de M, las relaciones,
-DAX y los visuales requiere abrir Power BI Desktop. No se debe declarar un
 PBIX/PBIP funcional hasta completar esa prueba manual.
       
