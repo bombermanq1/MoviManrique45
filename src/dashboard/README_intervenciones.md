@@ -54,7 +54,5 @@ Cada ficha presenta estas medidas como opciones sujetas a inspección, diseño,
 autorización y evaluación de la entidad competente.
 
 El costo por zona se mantiene como **Pendiente de estudio técnico y
-presupuesto**. 
-
-
-de accesibilidad. Por ello, el módulo no estima riesgo, causalidad
+presupuesto
+de accesibilidad. Por ello, el módulo no estima r
