@@ -19,26 +19,11 @@
   26 segmentos definitivos; GeoPackage externo localizado y comparado.
 - Pruebas: importaciones, lectura de todas las fuentes y conexión con timeout.
 - Problema: PostgreSQL pide contraseña no disponible para libpq.
-- Pendiente: autenticar y validar versiones PostGIS, tablas, columnas, SRID,
-  conteos y equivalencia con fuentes locales. No se ejecutaron escrituras SQL.
 
-## Fase 2 — Auditoría geométrica: análisis local ejecutado
 
-- Implementado: longitudes métricas, validez, duplicados geométricos, partes,
-  extremos, vecinos con tolerancias 0.01/0.1/1 m, cruces/solapes y revisión.
-- Archivos: [GPKG](../../data/processed/geospatial/carrera45_auditoria.gpkg),
-  [reporte](../auditoria_geometrica_carrera45.md), relaciones_partes.csv.
-- Resultados: 26 entidades, 33 partes, 1698.674535 m; seis partes <1 m en
-  7611, 20909, 24568 y 28471. Ninguna entidad inválida ni geometría duplicada.
-  32 enlaces de extremo a vecino son candidatos de revisión, no 32 errores confirmados.
-- Pruebas: seis fragmentos/IDs esperados, 66 extremos, relectura exacta WKB y
-  equivalencia geométrica con GeoPackage externo.
-- Problemas: seis fragmentos no cumplen el criterio conservador de conexión
-  por ambos extremos. No se eliminaron ni corrigieron.
-- Pendiente: revisión manual y contraste SQL; no hay consultas anteriores
-  guardadas. El reporte previo de 27 entidades no es el mismo eje definitivo.
 
-## Fase 3 — Siniestros: análisis local ejecutado
+
+## Fase 2 — Siniestros: análisis local ejecutado
 
 - Implementado: filtro desde RAW, fechas, coordenadas, duplicados, distancias,
   sensibilidad, agregación temporal/categórica, cuadrícula y prioridades descriptivas.
@@ -55,7 +40,7 @@
 - Pendiente: verificación SQL y evaluación experta de exactitud/cobertura.
   No se calculan tasas de riesgo ni significación de hotspots.
 
-## Fase 4 — Automatización: ejecutada y reproducida
+## Fase 3 — Automatización: ejecutada y reproducida
 
 - Implementado: [módulos](../../src/geospatial/), configuración, validaciones,
   staging de GPKG, reemplazo de productos, hashes y logging de errores.
@@ -70,7 +55,7 @@
 - Pendiente: no hay transacción conjunta de todos los archivos. Tras un fallo,
   revisar log y pruebas antes de consumir productos. No se programaron tareas recurrentes.
 
-## Fase 5 — QGIS: generado y validado
+## Fase 4 — QGIS: generado y validado
 
 - Implementado: proyecto local con 10 capas, nombres/leyenda, colores diferenciados,
   concentraciones graduadas, CRS 9377 y rutas relativas; capas de solo lectura.
@@ -84,7 +69,7 @@
   ejecución posterior finalizó con código cero.
 - Pendiente: revisión humana de fragmentos y conexiones; no requiere conexión SQL.
 
-## Fase 6 — Power BI: datasets preparados y validados
+## Fase 5 — Power BI: datasets preparados y validados
 
 - Implementado: hechos de 8332 registros, dimensiones de 26 segmentos y 439
   zonas, resúmenes por año, gravedad, clase, barrio y corredor.
@@ -96,7 +81,7 @@
   conteo de hechos para filtros interactivos y evitar duplicar medidas.
 - Pendiente: importar en Power BI cuando corresponda. No se modificaron dashboards.
 
-## Fase 7 — Web: capas preparadas y validadas
+## Fase 6 — Web: capas preparadas y validadas
 
 - Implementado: EPSG:4326 y lista explícita de atributos; celdas con mínimo 5
   registros, sin puntos individuales, direcciones, radicados ni IDs de eventos.
@@ -108,16 +93,3 @@
 - Problemas: no se redondean fragmentos de centímetros; tamaños ya son pequeños.
 - Pendiente: integración futura, sin construir ni publicar frontend/backend.
 
-## Fase 8 — Pruebas y documentación: validación local completada
-
-- Implementado: manual de ejecución, diccionario, metodología, evidencias y pendientes.
-- Archivos: [README](../../src/geospatial/README.md), [tests.txt](tests.txt),
-  [tests.json](tests.json), manifiestos y reportes por fase.
-- Resultado: 15 pruebas aprobadas; repetición con igualdad lógica y fuentes intactas.
-- Cobertura: geometrías originales, integridad, CRS, duplicados, corredores,
-  exportaciones y reproducibilidad. No se simula éxito de la conexión PostgreSQL.
-- Problemas pendientes: autenticación SQL y revisión experta de fragmentos;
-  no se declara completada la validación de la base de datos.
-
-No se ejecutó git add, commit ni push; no se alteró el repositorio Git superior,
-no se borraron fuentes y no se modificaron tablas PostgreSQL.
