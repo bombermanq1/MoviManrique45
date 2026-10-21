@@ -57,5 +57,4 @@ El costo por zona se mantiene como **Pendiente de estudio técnico y
 presupuesto**. 
 
 
-de accesibilidad. Por ello, el módulo no estima riesgo, causalidad, efectividad
-ni prioridad institucional de una obra.
+de accesibilidad. Por ello, el módulo no estima riesgo, causalidad
