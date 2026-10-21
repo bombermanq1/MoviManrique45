@@ -55,4 +55,4 @@ autorización y evaluación de la entidad competente.
 
 El costo por zona se mantiene como **Pendiente de estudio técnico y
 presupuesto
-de accesibilidad. Por ello, el módulo no estima r
+de accesibilidad. Por ello, el módul
