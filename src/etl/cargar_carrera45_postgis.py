@@ -1,10 +1,6 @@
 """Consulta la tabla de Carrera 45; escribir requiere una confirmación explícita.
 
-Este módulo no abre conexiones ni solicita contraseñas al importarse. Por
-defecto verifica en modo lectura si existe la tabla esperada. La creación de
-una tabla sigue disponible únicamente para una ejecución consciente con
-``--permitir-escritura``; no se invoca desde el MVP ni desde las pruebas.
-"""
+
 
 from __future__ import annotations
 
