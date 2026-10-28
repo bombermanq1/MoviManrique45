@@ -75,6 +75,14 @@ class ReproducibilidadTests(unittest.TestCase):
                 with urlopen(f"http://127.0.0.1:{puerto}/data/intervenciones.json", timeout=5) as respuesta:
                     intervenciones = json.loads(respuesta.read().decode("utf-8"))
                     self.assertEqual(respuesta.status, 200)
+                for recurso in ("css/styles.css", "js/app.js", "js/datos.js", "js/mapa.js", "js/intervenciones.js"):
+                    with urlopen(f"http://127.0.0.1:{puerto}/{recurso}", timeout=5) as respuesta:
+                        self.assertEqual(respuesta.status, 200, recurso)
+                        self.assertGreater(len(respuesta.read()), 0, recurso)
+                self.assertIn('href="css/styles.css"', pagina)
+                self.assertIn('type="module" src="js/app.js"', pagina)
+                self.assertNotIn("<style>", pagina)
+                self.assertNotIn("<script>", pagina)
                 self.assertIn('id="anio"', pagina)
                 self.assertIn('id="barrio"', pagina)
                 self.assertIn('id="categoria"', pagina)

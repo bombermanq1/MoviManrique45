@@ -2,7 +2,7 @@
 import json
 import geopandas as gpd
 import pandas as pd
-from .common import ROOT, OUTPUT, table
+from .common import ROOT, OUTPUT, DOCS, table
 from .probe import digest
 
 def main():
@@ -59,8 +59,9 @@ def main():
     report+='No es posible decidir solo con estos datos si el origen es precisión de geocodificación, asignación administrativa, eje de vía limítrofe o cambios históricos del límite. No se cuenta con precisión posicional certificada ni versiones anuales del polígono. Estar cerca del límite no demuestra error. La repetición de coordenadas tampoco demuestra eventos duplicados.\n\n'
     report+='La diferencia entre 644 puntos próximos al eje y 604 del corredor se explica por los 40 registros fuera de Manrique a <=50 m. Los otros cuatro puntos externos no están dentro de esa distancia. Se conservan los 44 registros en hechos, con dentro_manrique=false y zona_id nulo.\n\n'
     report+='Los 40 puntos del borde están como máximo a '+str(result['near_boundary_max_m']*1000)+' mm. La precisión numérica de los cálculos no equivale a precisión posicional de la fuente. El conteo estricto de 604 debe presentarse junto con esta sensibilidad: tolerar 1 cm en el límite incorporaría esos 40 registros próximos sin cambiar su posición. No se adoptó esa tolerancia ni se cambió la selección.\n\n'
-    report+='Detalle por objectid, sin dirección ni radicado: [CSV de revisión](../../data/processed/geospatial/siniestros_fuera_manrique_revision.csv). El contraste con PostgreSQL se registra en [validación final](validacion_final.md).\n'
-    (ROOT/'reports/geospatial/investigacion_44_siniestros.md').write_text(report,encoding='utf-8')
+    report+='El detalle por objectid, sin dirección ni radicado, está en el archivo local `data/processed/geospatial/siniestros_fuera_manrique_revision.csv`; no se incluye en Git. El contraste con PostgreSQL se registra en [validación final](validacion_final.md).\n'
+    DOCS.mkdir(parents=True, exist_ok=True)
+    (DOCS/'investigacion_44_siniestros.md').write_text(report,encoding='utf-8')
     print(json.dumps(result,indent=2,ensure_ascii=True))
 
 if __name__=='__main__':

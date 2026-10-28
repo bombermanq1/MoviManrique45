@@ -8,6 +8,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / 'data/processed/geospatial'
 REPORTS = ROOT / 'reports'
+DOCS = ROOT / 'docs'
 
 def require_columns(frame, columns):
     missing = set(columns) - set(frame.columns)

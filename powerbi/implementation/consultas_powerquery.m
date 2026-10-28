@@ -3,8 +3,8 @@
 
 No contiene varias consultas concatenadas. Cree una consulta en blanco llamada
 IndicePowerQuery y pegue este archivo si desea ver la lista de recursos.
-Para construir el modelo, use los archivos separados de powerquery/README.md
-en el orden indicado allí.
+Para construir el modelo, use los archivos separados de powerquery/ en el
+orden indicado en docs/powerbi.md desde la raíz del proyecto.
 */
 let
     Recursos = #table(

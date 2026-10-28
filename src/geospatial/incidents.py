@@ -4,7 +4,7 @@ import geopandas as gpd
 import numpy as np
 import pandas as pd
 from shapely.geometry import box
-from .common import ROOT, OUTPUT, REPORTS, metric, require_columns, valid_geometry, write_gpkg, table
+from .common import ROOT, OUTPUT, DOCS, metric, require_columns, valid_geometry, write_gpkg, table
 from .closure_policy import classify, validate_frozen_ids
 
 def coordinate_mask(frame):
@@ -151,6 +151,7 @@ def run(config, roads):
     report += 'Distancias EPSG:9377 a la union del eje, tolerancia numerica 0.000001 m. Corredor: buffer Shapely de 50 m recortado al limite oficial; incluye borde. La aproximacion poligonal del arco del buffer puede diferir de distancia<=50 en el limite.\n\n'
     report += f'Concentraciones: cuadricula fija de {config["grid_size_m"]} m anclada en (0,0) del CRS, recortada a Manrique; solo celdas ocupadas. Cada punto pertenece a una celda por floor(x/tamaño), floor(y/tamaño). Prioridad exploratoria: cantidad >= percentil {100*config["priority_quantile"]}% de celdas ocupadas (umbral {threshold}) y al menos un registro a <=100 m del eje. Empates incluidos.\n\n'
     report += 'No son hotspots estadisticamente significativos, causalidad, atribucion de via ni tasas de riesgo. Faltan exposicion, aforos y poblacion comparable. Variaciones anuales pueden reflejar cobertura o reporte; no equivalen a cambios del riesgo. No se presupone que 2025 sea un año completo.\n\n'
-    report += 'Pruebas de fase: unicidad, filtro RAW, IDs congelados del cierre, relectura de capas/CRS. PostgreSQL fue contrastado en la validacion final previa; este cierre no reabre la base. Ver [validacion SQL](geospatial/validacion_final.md) y [cierre](geospatial/cierre_tecnico.md).\n'
-    (REPORTS / 'analisis_espacial_siniestros.md').write_text(report, encoding='utf-8')
+    report += 'Pruebas de fase: unicidad, filtro RAW, IDs congelados del cierre, relectura de capas/CRS. PostgreSQL fue contrastado en la validacion final previa; este cierre no reabre la base. Ver [validacion SQL](validacion_final.md) y [cierre](cierre_tecnico.md).\n'
+    DOCS.mkdir(parents=True, exist_ok=True)
+    (DOCS / 'analisis_espacial_siniestros.md').write_text(report, encoding='utf-8')
     return layers, facts, stats

@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import geopandas as gpd
 import pandas as pd
-from .common import ROOT,OUTPUT,table
+from .common import ROOT,OUTPUT,DOCS,table
 
 def main():
     tiny=gpd.read_file(OUTPUT/'carrera45_auditoria.gpkg',layer='fragmentos')
@@ -39,7 +39,8 @@ def main():
     report+='\nSe vuelve a intersectar en memoria la entidad correspondiente de la malla RAW con el límite oficial. Se contrasta cada parte diminuta contra ese resultado y la entidad definitiva contra el GeoPackage de revisión. No se guardan geometrías corregidas ni se modifica ninguna fuente.\n\n'
     report+='Advertencia de trazabilidad: la malla RAW declara EPSG:9377, pero sus bounds son '+str(bounds.tolist())+'. El script preexistente crear_carrera45_manrique.py documenta su interpretación como EPSG:4326 antes de proyectar. Se reproduce explícitamente esa interpretación solo en memoria para esta comprobación. Confiar literalmente en la etiqueta produciría intersecciones vacías. El inventario inicial verificó la etiqueta, no su coherencia numérica; queda rectificado.\n\n'
     report+='Una parte reproducible por el recorte territorial y tocando su borde es compatible con un efecto del recorte; no demuestra que sea una conexión vial válida ni autoriza eliminarla. Las distancias extremo-a-vecino explican la clasificación conservadora de revisión manual. El contraste con PostgreSQL se registra aparte.\n'
-    (ROOT/'reports/geospatial/validacion_final_fragmentos.md').write_text(report,encoding='utf-8')
+    DOCS.mkdir(parents=True, exist_ok=True)
+    (DOCS/'validacion_final_fragmentos.md').write_text(report,encoding='utf-8')
     print(frame.to_string(index=False))
 
 if __name__=='__main__':

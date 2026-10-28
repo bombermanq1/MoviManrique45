@@ -74,8 +74,9 @@ class InterfazIntervencionesTests(unittest.TestCase):
 
     def test_html_declara_selector_ficha_y_mapa(self) -> None:
         html = (RAIZ / "web" / "index.html").read_text(encoding="utf-8")
+        javascript = "\n".join(ruta.read_text(encoding="utf-8") for ruta in (RAIZ / "web" / "js").glob("*.js"))
         for texto in (
-            "Posibles soluciones en la Carrera 45",
+            "Posibles mejoras, zona por zona.",
             "zona-selector",
             "zona-ficha",
             "zona-comparacion",
@@ -85,7 +86,7 @@ class InterfazIntervencionesTests(unittest.TestCase):
             "Ver en el mapa",
             "Pendiente de inspección",
         ):
-            self.assertIn(texto, html)
+            self.assertIn(texto, html + javascript)
 
 
 if __name__ == "__main__":

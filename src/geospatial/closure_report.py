@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 import pandas as pd
-from .common import ROOT,table,json_write
+from .common import ROOT,DOCS,table,json_write
 from .probe import digest
 
 def main():
@@ -13,12 +13,13 @@ def main():
     if not manifest['reproducible'] or not tests['successful'] or not qgis['passed']:
         raise RuntimeError('No cerrar sin reproducibilidad, pruebas y QGIS satisfactorios.')
     before=json.loads((folder/'cierre_archivos_antes.json').read_text(encoding='utf-8'))
-    report_path=folder/'cierre_tecnico.md'
+    DOCS.mkdir(parents=True, exist_ok=True)
+    report_path=DOCS/'cierre_tecnico.md'
     report_path.touch(exist_ok=True)
     inventory_path=folder/'cierre_archivos.json'
     if not inventory_path.exists():
         inventory_path.write_text('{}',encoding='utf-8')
-    paths=[p for base in ['src/geospatial','tests','powerbi/geospatial','reports','qgis','data/processed/geospatial']
+    paths=[p for base in ['src/geospatial','tests','powerbi/geospatial','reports','docs','qgis','data/processed/geospatial']
         for p in (ROOT/base).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
     changed=[]
     for path in sorted(paths):
@@ -40,17 +41,17 @@ def main():
     text+='3. Cuatro externos restantes: categoria_analisis=revision_territorial y pendiente_revision_territorial=true. Se conserva su ubicación nominal de origen y se añade territorio_geometrico separado.\n'
     text+='4. Seis fragmentos: conservados, sin eliminar ni fusionar. El CSV de revisión registra la decisión y su origen reproducible mediante recorte territorial; no acredita conectividad funcional.\n'
     text+='5. CRS RAW: en cada ejecución se contrasta etiqueta EPSG:9377 y bounds geográficos. Se conserva la discrepancia conocida, sin corregir el RAW. Un estado diferente detiene esta versión para revisión.\n\n'
-    text+='Categorías mutuamente excluyentes; resto_manrique contiene 7684 registros. sin_posicion_validada se reserva para casos sin georreferenciación válida (cero actualmente). [Diccionario](diccionario_datos.md) y [guía Power BI](../../powerbi/geospatial/README.md).\n\n'
+    text+='Categorías mutuamente excluyentes; resto_manrique contiene 7684 registros. sin_posicion_validada se reserva para casos sin georreferenciación válida (cero actualmente). [Diccionario](diccionario_datos.md) y [guía Power BI](powerbi.md).\n\n'
     text+='## Verificaciones ejecutadas\n\n'
     text+=f"Pruebas: **{tests['tests']} aprobadas**, {tests['failures']} fallos, {tests['errors']} errores. Se incluyen los 22 controles previos y ocho controles de cierre: partición, IDs exactos, rechazo de sustitución de ID con igual conteo, borde sin ampliación, relaciones/agregados, fragmentos intactos, discrepancia CRS y repetición de exportaciones.\n\n"
     text+=f"Dos ejecuciones sucesivas con las mismas fuentes, configuración y código: reproducible={manifest['reproducible']}. Se compararon hashes lógicos de geometrías/tablas y bytes de {len(manifest['export_hashes'])} CSV/GeoJSON. Fuentes originales intactas: {manifest['sources_unchanged']}; verificación SHA-256 incluida en pruebas. No se exige igualdad binaria de los GeoPackage por sus metadatos internos.\n\n"
     text+=f"QGIS existente reabierto tras actualizar capas derivadas: {qgis['layer_count']} capas válidas, proyecto sin cambios={qgis['project_unchanged']}. La comprobación SQL utiliza la evidencia previamente autenticada de solo lectura; en este cierre no se abrió una nueva conexión ni se modificaron tablas.\n\n"
-    text+='Evidencia: [pruebas](final_tests.txt), [manifiesto](run.json), [CRS](crs_raw_cierre.json), [QGIS](qgis_final.json).\n\n'
+    text+='Evidencia: [pruebas](../reports/geospatial/final_tests.txt), [manifiesto](../reports/geospatial/run.json), [CRS](../reports/geospatial/crs_raw_cierre.json), [QGIS](../reports/geospatial/qgis_final.json).\n\n'
     text+='## Archivos creados o modificados en este cierre\n\n'
-    text+='Lista comparada por SHA-256 con el inventario anterior al cierre. Incluye derivados regenerados; los RAW no fueron reescritos.\n\n'
+    text+='Lista comparada por SHA-256 con el inventario anterior al cierre. Incluye derivados regenerados y archivos locales excluidos de Git; los RAW no fueron reescritos. Las rutas se indican respecto a la raíz del proyecto.\n\n'
     for row in changed:
         relative=row['archivo']
-        text+=f"- {row['estado']}: [{relative}](../../{relative})\n"
+        text+=f"- {row['estado']}: `{relative}`\n"
     text+='\n## Revisión humana que permanece\n\n'
     text+='- Examinar los cuatro registros externos (125795, 140908, 154532 y 192142) con fuentes territoriales autorizadas. No reclasificarlos automáticamente.\n'
     text+='- Revisar la función vial de los seis fragmentos. La conservación en esta versión está decidida; cualquier corrección futura necesita aprobación.\n'

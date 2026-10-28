@@ -19,6 +19,7 @@ import geopandas as gpd
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parent
+DOCS = ROOT / "docs"
 PQ = OUT / "powerquery"
 DAX = OUT / "dax" / "medidas_modelo.dax"
 
@@ -97,8 +98,7 @@ def same_ids(facts: pd.DataFrame, frozen: dict[str, list[int]], category: str) -
 
 
 def parentheses_balanced(dax: str) -> bool:
-    # La prueba no sustituye un compilador DAX: elimina comentarios simples y
-    # confirma que los bloques no tienen paréntesis desbalanceados.
+
     stripped = re.sub(r"//.*", "", dax)
     depth = 0
     for char in stripped:
@@ -309,9 +309,10 @@ def main() -> int:
         "",
         payload["pbip_status"],
         "",
-        "Los recursos manuales se encuentran en `powerquery/`, `dax/`, `modelo_relaciones.md` y `guia_4_paginas.md`.",
+        "Los recursos manuales están en `powerbi/implementation/powerquery/` y `powerbi/implementation/dax/` desde la raíz del proyecto; consulte la [guía Power BI](powerbi.md).",
     ])
-    (OUT / "validacion_estatica_powerbi.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    DOCS.mkdir(parents=True, exist_ok=True)
+    (DOCS / "validacion_estatica_powerbi.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(json.dumps(payload["summary"], ensure_ascii=False))
     return 0 if failed == 0 else 1
 

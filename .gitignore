@@ -77,3 +77,26 @@ reports/geospatial/environment.json
 powerbi/geospatial/hechos_siniestros.csv
 
 .build/
+
+# Entregas anteriores y verificación visual local
+/deliverables/
+/docs/verificacion_final_frontend.md
+
+# Resultados regenerables de los validadores de Power BI
+/powerbi/design/auditoria.json
+/powerbi/implementation/validacion_estatica_powerbi.json
+
+# Reportes locales; conservar las evidencias que usan pruebas y scripts
+/reports/*
+!/reports/geospatial/
+/reports/geospatial/*
+!/reports/geospatial/cierre_archivos.json
+!/reports/geospatial/cierre_archivos_antes.json
+!/reports/geospatial/crs_raw_cierre.json
+!/reports/geospatial/database_final.json
+!/reports/geospatial/final_tests.json
+!/reports/geospatial/final_tests.txt
+!/reports/geospatial/fragments_final.json
+!/reports/geospatial/outside_final.json
+!/reports/geospatial/qgis_final.json
+!/reports/geospatial/run.json

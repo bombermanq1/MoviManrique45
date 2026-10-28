@@ -3,7 +3,7 @@ from itertools import combinations
 import geopandas as gpd
 import pandas as pd
 from shapely.geometry import Point, LineString
-from .common import ROOT, OUTPUT, REPORTS, metric, require_columns, valid_geometry, write_gpkg, table
+from .common import ROOT, OUTPUT, DOCS, metric, require_columns, valid_geometry, write_gpkg, table
 
 def audit(eje, config):
     eje = metric(eje, config['metric_crs']).copy()
@@ -96,6 +96,7 @@ def run(config):
     report += table(tiny.drop(columns='geometry')) + '\n' + table(ends.loc[ends.parte_id.isin(tiny.parte_id)].drop(columns='geometry'))
     report += '\nLos candidatos de discontinuidad unen cada extremo sin contacto tolerado a su linea mas cercana. No son correcciones propuestas: pueden ser limites legitimos, ramales o cortes del recorte territorial. Las relaciones documentan cruces y solapes entre todas las partes cercanas.\n\n'
     report += comparison + '\n\nEl reporte anterior de continuidad usa 27 entidades preliminares; este analiza las 26 definitivas. La validacion final previa confirmo coincidencia exacta con PostgreSQL y reproduccion de los seis fragmentos por recorte territorial.\n\n'
-    report += 'Decision de cierre v1: conservar los seis fragmentos sin eliminar ni fusionar. Reproducibilidad del recorte no demuestra conectividad vial funcional. Ver [contraste](geospatial/validacion_final_fragmentos.md). Pruebas: relectura exacta de geometria/CRS y conteos. Permanece la revision humana funcional; no la decision de conservacion en esta version.\n'
-    (REPORTS / 'auditoria_geometrica_carrera45.md').write_text(report, encoding='utf-8')
+    report += 'Decision de cierre v1: conservar los seis fragmentos sin eliminar ni fusionar. Reproducibilidad del recorte no demuestra conectividad vial funcional. Ver [contraste](validacion_final_fragmentos.md). Pruebas: relectura exacta de geometria/CRS y conteos. Permanece la revision humana funcional; no la decision de conservacion en esta version.\n'
+    DOCS.mkdir(parents=True, exist_ok=True)
+    (DOCS / 'auditoria_geometrica_carrera45.md').write_text(report, encoding='utf-8')
     return {'segmentos': eje, 'partes': parts, 'fragmentos': tiny, 'extremos': ends, 'discontinuidades': gaps}, summary

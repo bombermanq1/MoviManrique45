@@ -37,9 +37,10 @@ class DashboardGeovisorTests(unittest.TestCase):
 
     def test_html_declara_interacciones_y_contexto(self) -> None:
         html = (RAIZ / "web" / "index.html").read_text(encoding="utf-8")
+        javascript = "\n".join(ruta.read_text(encoding="utf-8") for ruta in (RAIZ / "web" / "js").glob("*.js"))
         requeridos = [
             "Cómo se construyó el análisis",
-            "Qué falta por revisar",
+            "Qué permiten concluir estos datos",
             "layer-limite",
             "layer-eje",
             "layer-zonas",
@@ -56,7 +57,16 @@ class DashboardGeovisorTests(unittest.TestCase):
             "50 m no es una norma vial",
         ]
         for texto in requeridos:
-            self.assertIn(texto, html)
+            self.assertIn(texto, html + javascript)
+
+    def test_mapa_usa_el_evento_de_teclado_recibido(self) -> None:
+        javascript = (RAIZ / "web" / "js" / "mapa.js").read_text(encoding="utf-8")
+        inicio = javascript.index("function manejarTeclado(evento)")
+        fin = javascript.index("function enlazarMapa()", inicio)
+        codigo = javascript[inicio:fin]
+        self.assertIn("evento.key", codigo)
+        self.assertIn("evento.preventDefault()", codigo)
+        self.assertNotRegex(codigo, r"\bevent\.(?:key|target|preventDefault)\b")
 
 
 if __name__ == "__main__":

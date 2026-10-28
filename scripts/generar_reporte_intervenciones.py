@@ -12,7 +12,7 @@ if str(RAIZ) not in sys.path:
 from src.dashboard.intervenciones import construir_payload_intervenciones
 
 
-SALIDA = RAIZ / "reports" / "modulo_intervenciones_v1.md"
+SALIDA = RAIZ / "docs" / "modulo_intervenciones_v1.md"
 
 
 def main() -> None:

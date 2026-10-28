@@ -1,4 +1,4 @@
-"""Solo lectura de fuentes; escribe evidencia y documentación en esta carpeta."""
+"""Solo lectura de fuentes; guarda evidencia aquí y documentación en docs/."""
 from pathlib import Path
 import json
 import hashlib
@@ -7,6 +7,7 @@ import geopandas as gpd
 
 ROOT=Path(__file__).resolve().parents[2]
 OUT=Path(__file__).resolve().parent
+DOCS=ROOT/'docs'
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
     paths=sorted((ROOT/'powerbi/geospatial').glob('*.csv'))
@@ -55,12 +56,13 @@ def main():
     lines=['# Auditoría Power BI — solo lectura','', 'No se modificaron datasets ni se ejecutó el ETL geoespacial. Tipos inferidos con pandas; los tipos semánticos para Power BI se especifican en el diseño.','',
         '| CSV | Filas | Columnas | Duplicados completos |','|---|---:|---:|---:|']
     for name,info in inventory.items():
-        lines.append(f'| [{name}](../geospatial/{name}) | {info["rows"]} | {len(info["columns"])} | {info["duplicate_rows"]} |')
+        lines.append(f'| [{name}](../powerbi/geospatial/{name}) | {info["rows"]} | {len(info["columns"])} | {info["duplicate_rows"]} |')
     lines+=['','## Comprobaciones','', '```json',json.dumps(stats,indent=2,ensure_ascii=False),'```','', '## Columnas y perfil real']
     for name,info in inventory.items():
         lines+=['',f'### {name}','','| Columna | Tipo inferido | Nulos | Distintos |','|---|---|---:|---:|']
         lines += [f'| {c["name"]} | {c["inferred_dtype"]} | {c["nulls"]} | {c["distinct"]} |' for c in info['columns']]
-    (OUT/'auditoria.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    DOCS.mkdir(parents=True, exist_ok=True)
+    (DOCS/'auditoria_powerbi.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print(json.dumps(stats,indent=2,ensure_ascii=True))
 
 if __name__=='__main__': main()

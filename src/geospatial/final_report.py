@@ -1,6 +1,6 @@
 """Resume evidencia existente; no abre nuevas conexiones ni regenera productos."""
 import json
-from .common import ROOT,table
+from .common import ROOT,DOCS,table
 import pandas as pd
 
 def main():
@@ -48,9 +48,10 @@ def main():
     text+='## Evidencia, pruebas y pendientes reales\n\n'
     if (folder/'final_tests.json').exists():
         text+='Pruebas: '+str(read('final_tests.json'))+'\n\n'
-    text+='Evidencias: [PostgreSQL](database_final.json), [QGIS](qgis_final.json), [fragmentos](fragments_final.json), [puntos externos](outside_final.json), [pruebas](final_tests.txt).\n\n'
+    text+='Evidencias: [PostgreSQL](../reports/geospatial/database_final.json), [QGIS](../reports/geospatial/qgis_final.json), [fragmentos](../reports/geospatial/fragments_final.json), [puntos externos](../reports/geospatial/outside_final.json), [pruebas](../reports/geospatial/final_tests.txt).\n\n'
     text+='Pendientes de criterio experto: decidir tratamiento del borde sin modificar datos originales; revisar los seis fragmentos en contexto vial; contrastar los cuatro puntos externos restantes con una fuente autorizada; documentar/corregir metadatos del RAW únicamente con autorización. No quedan correcciones geométricas aprobadas. No hubo escrituras SQL, commits ni push.\n'
-    (folder/'validacion_final.md').write_text(text,encoding='utf-8')
+    DOCS.mkdir(parents=True, exist_ok=True)
+    (DOCS/'validacion_final.md').write_text(text,encoding='utf-8')
 
 if __name__=='__main__':
     main()
